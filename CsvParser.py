@@ -78,7 +78,7 @@ class CsvParser(Parser):
         print "encoding:", self.encoding
         self.csv_file.seek(0)
         for row in self.csv_Reader:
-            data.append(row[0].decode(self.encoding))
+            data.append(row)
 
         return data
 

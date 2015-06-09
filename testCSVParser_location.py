@@ -4,9 +4,11 @@ __author__ = 'hellfish90'
 
 if __name__ == '__main__':
 
-    filename = "test_data.csv"
+    filename = "test_location.csv"
     parser = CsvParser(filename)
     header = parser.get_data_types()
+
+
 
     data_set = parser.get_set_by_data_and_location(1, 1)
 
