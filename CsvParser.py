@@ -9,7 +9,7 @@ __author__ = 'hellfish90'
 
 class CsvParser(Parser):
 
-    def get_header(self):
+    def get_data_types(self):
 
         self.csv_file = open(self.filename, 'rb')
         dialect = csv.Sniffer().sniff(self.csv_file.read(1024))
@@ -25,7 +25,7 @@ class CsvParser(Parser):
 
         return u_headers
 
-    def get_set_of_data_with_coordinates(self, data_point, latitude_point, longitude_point):
+    def get_set_by_data_and_coordinates(self, data_point, latitude_point, longitude_point):
 
         data_set = []
         self.csv_file.seek(0)
@@ -49,7 +49,7 @@ class CsvParser(Parser):
 
         return data_set, lose_rows
 
-    def get_set_of_data_with_location(self, data_point, location_point, location_extra):
+    def get_set_by_data_and_location(self, data_point, location_point, location_extra=""):
 
         data_set = []
         self.csv_file.seek(0)

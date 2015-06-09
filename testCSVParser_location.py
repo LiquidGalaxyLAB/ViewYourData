@@ -6,11 +6,9 @@ if __name__ == '__main__':
 
     filename = "test_data.csv"
     parser = CsvParser(filename)
-    header = parser.get_header()
+    header = parser.get_data_types()
 
-    #print Coordinates.get_coordinates_by_location(["C/Diputacio"])
-
-    data_set = parser.get_set_of_data_with_location(1, 1, "")
+    data_set = parser.get_set_by_data_and_location(1, 1)
 
     for item in header:
         print item,
@@ -20,7 +18,6 @@ if __name__ == '__main__':
     for data in data_set[0]:
         print data['lat'], data['lng'], data['data']
 
-
-    print "Losed Rows: ", len(data_set[1])
+    print "Missed Rows: ", len(data_set[1])
 
     parser.close_file()

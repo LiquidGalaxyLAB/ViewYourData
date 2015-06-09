@@ -14,14 +14,12 @@ def get_coordinates_by_location(location_data):
     else:
         query = location_data[0]
 
-    #print "query:" + query
-
     url = 'http://maps.google.com/maps/api/geocode/json?address='+query+'&sensor=false'
-
     r = requests.get(url)
-    #print r.status_code
-    #print r.encoding
-    #print r.text
+
+    # print r.status_code
+    # print r.encoding
+    # print r.text
 
     json = r.json()
 
@@ -32,12 +30,12 @@ def get_coordinates_by_location(location_data):
         if correct_coordinates(lat, lng):
 
             coordinates = {'lat': lat, 'lng': lng}
-            #sleep(0.1)
+            # sleep(0.1)
             return coordinates
         else:
             return None
     else:
-        #print json["status"]
+        # print json["status"]
         return None
 
 
@@ -47,10 +45,10 @@ def correct_coordinates(lat, lng):
 
 def is_number(s):
     try:
-        float(s) # for int, long and float
+        float(s)  # for int, long and float
     except ValueError:
         try:
-            complex(s) # for complex
+            complex(s)  # for complex
         except ValueError:
             return False
 
