@@ -1,6 +1,8 @@
+import csv
+
 import Coordinates
 from Parser import Parser
-import csv
+
 
 __author__ = 'hellfish90'
 
@@ -15,13 +17,17 @@ class CsvParser(Parser):
         dialect = csv.Sniffer().sniff(self.csv_file.read(1024))
         self.csv_Reader = csv.reader(self.csv_file, dialect)
         self.csv_file.seek(0)
-        headers = self.csv_Reader.next()
 
         u_headers = []
 
-        for item in headers:
-            u_head = item.decode(self.encoding)
-            u_headers.append(u_head)
+        # Search the header
+        while len(u_headers) < 1:
+            headers = self.csv_Reader.next()
+
+            for item in headers:
+                u_head = item.decode(self.encoding)
+                u_headers.append(u_head)
+
 
         return u_headers
 

@@ -1,8 +1,8 @@
 __author__ = 'hellfish90'
 
-from DownloadManager import DownloadDataSetManager
-
 import unittest
+
+from Utils.ParseManager.Download.downloadmanager import DownloadDataSetManager
 
 
 class TestFileManager(unittest.TestCase):
@@ -28,7 +28,8 @@ class TestFileManager(unittest.TestCase):
 
         for data in self.url:
             formats.append(data[1])
-            fileMng = DownloadDataSetManager(data[2])
+            fileMng = DownloadDataSetManager()
+            fileMng.set_url(data[2])
             fileMng.download()
             test_formats.append(fileMng.get_type())
 
@@ -41,7 +42,8 @@ class TestFileManager(unittest.TestCase):
 
         for data in self.url:
             names.append(data[0])
-            fileMng = DownloadDataSetManager(data[2])
+            fileMng = DownloadDataSetManager()
+            fileMng.set_url(data[2])
             fileMng.download()
             test_names.append(fileMng.get_file_name())
 
@@ -54,7 +56,8 @@ class TestFileManager(unittest.TestCase):
 
         for data in self.url:
             names.append("/tmp/VYD/data_set/"+data[0])
-            fileMng = DownloadDataSetManager(data[2])
+            fileMng = DownloadDataSetManager()
+            fileMng.set_url(data[2])
             fileMng.download()
             test_names.append(fileMng.get_file_path())
 

@@ -4,6 +4,7 @@ import wget
 
 import os
 
+
 class DownloadDataSetManager(object):
 
     global dump
@@ -13,7 +14,7 @@ class DownloadDataSetManager(object):
     extList = ["xml", "json", "csv", "gtfs", "xls", "xlsx"]
     bar_thermometer = 0
 
-    def __init__(self, url):
+    def set_url(self, url):
         self.url = url
 
     def get_type(self):
@@ -33,7 +34,7 @@ class DownloadDataSetManager(object):
         wget.download(self.url, out=self.tmp_path, bar=self.bar_thermometer)
         self.file_name = os.listdir(self.tmp_path)[0]
         self.file_type = self.__get_file_type()
-        print self.file_name
+
     def __get_file_type(self):
 
         split_name = self.file_name.split(".")
@@ -50,7 +51,17 @@ class DownloadDataSetManager(object):
 
 if __name__ == '__main__':
 
-    fi = DownloadDataSetManager("http://mappe.regione.toscana.it/db-webgis/paas/example.jsp?format=xml")
+
+    url = [
+        ["biblioteche.csv",
+         "csv",
+         [u'id', u'est', u'nord', u'denominazione', u'indirizzo', u'comune', u'provincia', u'id_rete_biblio', u'cod_rete_biblio', u'desc_rete_biblio'],
+         "http://mappe.regione.toscana.it/db-webgis/biblio/example_postgis.jsp?format=csv"],
+        ]
+
+
+    fi = DownloadDataSetManager()
+    fi.set_url(url[0][3])
     fi.download()
     print "________________"
     print fi.get_file_name()

@@ -4,7 +4,7 @@ __author__ = 'hellfish90'
 
 if __name__ == '__main__':
 
-    filename = "test_location.csv"
+    filename = "test_files/test_location.csv"
     parser = CsvParser(filename)
     header = parser.get_data_types()
 
