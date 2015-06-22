@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>VYR</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="css/materialize.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="js/materialize.js"></script>
+
+
+	<link rel="shortcut icon" href="http://cdn.flaticon.com/png/256/60729.png">
+
+
+<script type="text/javascript">
+	
+
+
+    $(document).on('mouseenter.fixedActionBtn', '.fixed-action-btn', null);
+
+    $(document).on('mouseleave.fixedActionBtn', '.fixed-action-btn', null);
+
+    	position=0;
+      $(document).on('click.fixedActionBtn', '.fixed-action-btn', function(e) {
+      var $this = $(this);
+
+
+      if (position ==1) {
+
+      var time = 2000;
+      $this.find('ul .btn-floating').reverse().each(function () {
+      
+
+      $this.find('ul .btn-floating').velocity(
+        { scaleY: ".4", scaleX: ".4", translateY: "40px"},
+        { duration: 0 });
+
+      var time = 0;
+      $this.find('ul .btn-floating').reverse().each(function () {
+        $(this).velocity(
+          { opacity: "1", scaleX: "1", scaleY: "1", translateY: "0"},
+          { duration: 80, delay: time });
+        time += 40;
+      });
+        position = 0;
+      });
+  }else{
+  	      $this.find('ul .btn-floating').velocity(
+        { scaleY: ".4", scaleX: ".4", translateY: "40px"},
+        { duration: 0 });
+
+  }
+
+    });
+
+
+</script>
+
+
+</head>
+
+<body bgcolor="#e8eaf6">
+	<div class="container">
+
+
+		<nav>
+			<div class="nav-wrapper">
+				<div class="card-panel light-blue darken-4">
+					<span class="white-text text-darken-2"><H4 class="center-align">Layer View Manager</H4></span>
+				</div>
+			</div>
+		</nav>
+
+
+
+		<div class="row">
+			<div class="col s12 m6 l6">
+
+				<div id="intialization" class="section scrollspy">
+					<div class="card-panel  indigo darken-1">
+						<span class="white-text text-darken-2">
+
+						<h5 class="center-align">Enabled Layers</h5>
+
+
+						</span>
+
+					</div>
+
+
+					<ul class="collapsible popout" data-collapsible="accordion">
+						<li>
+							<div class="collapsible-header"><i class="mdi-image-filter-drama"></i>
+
+								Alergens
+
+							</div>
+							<div class="collapsible-body">
+
+								<ul class="collection">
+
+									<a href="#!" class="collection-item">Alan<span class="badge">1</span></a>
+									<a href="#!" class="collection-item">Alan<span class="badge">4</span></a>
+
+								</ul>
+
+
+
+							</div>
+						</li>
+						<li>
+							<div class="collapsible-header"><i class="mdi-image-filter-drama"></i>Second</div>
+							<div class="collapsible-body">
+
+								<ul class="collection">
+
+									<a href="#!" class="collection-item">Alan<span class="badge">1</span></a>
+									<a href="#!" class="collection-item">Alan<span class="badge">4</span></a>
+
+								</ul>
+
+
+
+							</div>
+						</li>
+						<li>
+							<div class="collapsible-header"><i class="mdi-image-filter-drama"></i>Third</div>
+							<div class="collapsible-body">
+								<ul class="collection">
+
+									<a href="#!" class="collection-item">Alan<span class="badge">1</span></a>
+									<a href="#!" class="collection-item">Alan<span class="badge">4</span></a>
+								</ul>
+
+							</div>
+						</li>
+					</ul>
+
+				</div>
+
+				
+
+			</div>
+
+
+
+			<div class="col s12 m6 l6">
+
+
+				<div id="intialization" class="section scrollspy">
+					<div class="card-panel  indigo darken-1">
+						<span class="white-text text-darken-2">
+
+								<h5 class="center-align">Disabled Layers</h5>
+								</span>
+
+						</div>
+
+
+						<ul class="collapsible popout" data-collapsible="accordion">
+							<li>
+								<div class="collapsible-header"><i class="mdi-image-filter-drama"></i>
+
+									Alergens
+
+								</div>
+								<div class="collapsible-body">
+
+									<ul class="collection">
+
+										<a href="#!" class="collection-item">
+										Alan
+										<span class="badge">1
+										</span>
+										</a>
+										<a href="#!" class="collection-item">
+										Alan
+										<span class="badge">
+										<i class="mdi-action-delete"></i>
+										</span>
+										</a>
+
+									</ul>
+
+
+
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header"><i class="mdi-image-filter-drama"></i>Second</div>
+								<div class="collapsible-body">
+
+									<ul class="collection">
+
+										<a href="#!" class="collection-item">Alan<span class="badge">1</span></a>
+										<a href="#!" class="collection-item">Alan<span class="badge">4</span></a>
+
+									</ul>
+
+
+
+								</div>
+							</li>
+							<li>
+								<div class="collapsible-header"><i class="mdi-image-filter-drama"></i>Third</div>
+								<div class="collapsible-body">
+									<ul class="collection">
+
+										<a href="#!" class="collection-item">Alan<span class="badge">1</span></a>
+										<a href="#!" class="collection-item">Alan<span class="badge">4</span></a>
+									</ul>
+
+								</div>
+							</li>
+						</ul>
+
+					</div>
+
+
+
+				</div>
+
+
+				<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+					<a class="btn-floating btn-large waves-effect waves-light red" >
+						<i class="large mdi-editor-mode-edit"></i>
+					</a>
+					<ul>
+
+						<li><a class="btn-floating blue darken-1"><i class="large mdi-action-list"></i></a></li>
+						<li><a class="btn-floating red"><i class="large mdi-action-delete"></i></a></li>
+						<li><a class="btn-floating green"><i class="large mdi-content-add-circle"></i></a></li>
+					</ul>
+				</div>
+
+
+
+			</div>
+		</div>
+	</body>
+
+	</html>
