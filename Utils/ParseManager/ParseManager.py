@@ -30,7 +30,7 @@ class ParseManager(object):
         if self.file_type == "csv":
             self.parser = CsvParser(self.file_path)
         else:
-            raise NoParserImplemented("No parser implemented for this type of file"+self.file_name)
+            raise NoParserImplemented("No parser implemented for this type of file "+self.file_name)
 
 
     def get_data_by_location(self, header_position, extra, data_positions):
