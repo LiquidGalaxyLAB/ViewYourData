@@ -1,19 +1,26 @@
-from Download.downloadmanager import DownloadDataSetManager
-from Parser import CsvParser
-from Exception import NoParserImplemented
+from download.downloadmanager import DownloadDataSetManager
+from parser.csv_parser import CsvParser
+from exception import NoParserImplemented
 
 
 __author__ = 'hellfish90'
 
 
 class ParseManager(object):
-
     file_type = None
     file_path = None
     file_name = None
     url = None
     parser = None
     downloadManager = None
+
+    @staticmethod
+    def getParseManager(url):
+        if ParseManager.downloadManager != None:
+            return ParseManager.downloadManager
+        else:
+            ParseManager.downloadManager=ParseManager(url)
+            return ParseManager.downloadManager
 
     def __init__(self, url):
         self.url = url
@@ -31,7 +38,7 @@ class ParseManager(object):
         if self.file_type == "csv":
             self.parser = CsvParser(self.file_path)
         else:
-            raise NoParserImplemented("No parser implemented for this type of file "+self.file_name)
+            raise NoParserImplemented("No parser implemented for this type of file " + self.file_name)
 
 
     def get_data_by_location(self, header_position, extra, data_positions):
@@ -44,6 +51,8 @@ class ParseManager(object):
 
         return self.file_type
 
+    def get_file_name(self):
+        return self.file_name
 
     def get_header(self):
         return self.parser.get_data_types()

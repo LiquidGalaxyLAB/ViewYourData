@@ -1,11 +1,11 @@
-from VYD_Project.VYD.Utils.ParseManager.Parser import CsvParser
+from VYD_Project.VYD.Utils.ParseManager.parser import csv_parser
 
 __author__ = 'hellfish90'
 
 if __name__ == '__main__':
 
     filename = "test_files/test_location.csv"
-    parser = CsvParser(filename)
+    parser = csv_parser(filename)
     header = parser.get_data_types()
 
 

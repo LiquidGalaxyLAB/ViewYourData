@@ -1,4 +1,4 @@
-from VYD_Project.VYD.Utils.ParseManager.Parser import CsvParser
+from VYD_Project.VYD.Utils.ParseManager.parser import csv_parser
 
 
 __author__ = 'hellfish90'
@@ -6,7 +6,7 @@ __author__ = 'hellfish90'
 if __name__ == '__main__':
 
     filename = "test_files/test_location_extra.csv"
-    parser = CsvParser(filename)
+    parser = csv_parser(filename)
     header = parser.get_data_types()
 
     data_set = parser.get_set_by_data_and_location(0, 7, "Lleida")

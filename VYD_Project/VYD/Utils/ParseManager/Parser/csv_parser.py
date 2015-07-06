@@ -1,7 +1,7 @@
 import csv
 
-import Coordinates
-import Parser
+import coordinates
+import parser
 
 
 __author__ = 'hellfish90'
@@ -9,7 +9,7 @@ __author__ = 'hellfish90'
 # sudo apt-get install python3-magic
 
 
-class CsvParser(Parser):
+class CsvParser(parser.Parser):
 
     def get_data_types(self):
 
@@ -46,7 +46,7 @@ class CsvParser(Parser):
 
             data_row = {'data': data}
 
-            if Coordinates.correct_coordinates(lat, lng):
+            if coordinates.correct_coordinates(lat, lng):
                 data_row['lat'] = lat
                 data_row['lng'] = lng
                 data_set.append(data_row)
@@ -68,7 +68,7 @@ class CsvParser(Parser):
             data = row[data_point].decode(self.encoding)
 
             data_row = {'data': data}
-            coordinates = Coordinates.get_coordinates_by_location([loc, location_extra])
+            coordinates = coordinates.get_coordinates_by_location([loc, location_extra])
 
             if coordinates is not None:
                 data_row.update(coordinates)

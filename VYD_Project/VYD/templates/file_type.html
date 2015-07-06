@@ -22,7 +22,8 @@
                     </div>
                     <div class="col s8">
                       <span class="black-text">
-                        polution_barcelona_2015.csv
+                        {{ request.session.name }}
+
                       </span>
                     </div>
                   </div>
@@ -36,9 +37,9 @@
 
         <div class="col s12 m3 l2"><p></p></div>
         <div class="col s12">
-                                    <button class="btn waves-effect waves-light" type="submit" name="action">Continue
-                                        <i class="mdi-content-send right"></i>
-                                    </button>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Continue
+             <i class="mdi-content-send right"></i>
+        </button>
         </div>
 
 </div>

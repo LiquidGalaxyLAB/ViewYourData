@@ -12,6 +12,32 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
 
     <link rel="shortcut icon" href="http://cdn.flaticon.com/png/256/60729.png">
+
+    <script>
+
+        function downloadFile() {
+            console.log("call to download Page is working!") // sanity check
+            $.ajax({
+                url : "/VYD/layers/create/downloadFile/", // the endpoint
+                type : "POST", // http method
+
+                // handle a successful response
+                success : function(json) {
+                    console.log("success"); // another sanity check
+                    window.location.replace("/VYD/layers/create/fileInfo");
+                },
+
+                // handle a non-successful response
+                error : function(xhr,errmsg,err) {
+
+                    console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
+                }
+            });
+        };
+
+
+    </script>
+
 </head>
 <body bgcolor="#e8eaf6">
 <div class="container">

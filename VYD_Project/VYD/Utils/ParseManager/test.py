@@ -1,5 +1,5 @@
-from VYD_Project.VYD.Utils import ParseManager
-from VYD_Project.VYD.Utils.ParseManager.Exception import NoParserImplemented
+from parse_manager import ParseManager
+from exception import NoParserImplemented
 
 __author__ = 'hellfish90'
 

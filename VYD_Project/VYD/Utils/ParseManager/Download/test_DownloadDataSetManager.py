@@ -2,7 +2,7 @@ __author__ = 'hellfish90'
 
 import unittest
 
-from VYD_Project.VYD.Utils.ParseManager.Download.downloadmanager import DownloadDataSetManager
+from VYD_Project.VYD.Utils.ParseManager.download.downloadmanager import DownloadDataSetManager
 
 
 class TestFileManager(unittest.TestCase):
