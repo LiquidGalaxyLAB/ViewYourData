@@ -11,6 +11,9 @@ urlpatterns = [
     url(r'^layers/create/downloadPage', views.download_page),
     url(r'^layers/create/downloadFile', views.download_file),
     url(r'^layers/create/fileInfo', views.file_info_view),
+    url(r'^layers/create/selectData', views.select_data_of_header),
+
+
 
 
 ]

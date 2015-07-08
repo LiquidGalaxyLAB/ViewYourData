@@ -59,6 +59,14 @@ def download_file(request):
 
         return HttpResponseRedirect('/VYD/layers/create/submitUrl/')
 
-def file_info_view(request):
 
+def file_info_view(request):
     return render(request, 'file_type.html')
+
+
+def select_data_of_header(request):
+
+    parseManager = ParseManager.getParseManager("")
+    request.session['headers'] = parseManager.get_header()
+
+    return render(request, 'data_header.html')

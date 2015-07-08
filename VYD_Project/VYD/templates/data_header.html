@@ -1,0 +1,51 @@
+{% extends "template.html" %}
+{% block content %}
+
+    <nav>
+        <div class="nav-wrapper light-blue darken-4 ">
+
+            <div class="brand-logo center">
+                <span class="white-text text-darken-2"><H4 class="center-align ">Select data</H4></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="row center center-align"  style="padding-top:10%">
+
+        <div class="col s12 m3 l2"><p></p></div>
+        <div class="col s12 m6 l8"><p>
+            <div class=" center center-align">
+
+              <form action="VYD/layers/create/selectData">
+
+                  {% for header in request.session.headers %}
+                    <p>
+                      <input name="data_headers" type="checkbox" id="{{ forloop.counter }}" />
+                      <label for="{{ forloop.counter }}">{{header}}</label>
+                    </p>
+                  {% empty %}
+                    <li class="list-group-item">No headers something is wrong</li>
+                  {% endfor %}
+
+
+                <p>
+                  <input name="group1" type="checkbox" id="test1" />
+                  <label for="test1">Red</label>
+                </p>
+              </form>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+{% endblock content %}
