@@ -68,5 +68,16 @@ def select_data_of_header(request):
 
     parseManager = ParseManager.getParseManager("")
     request.session['headers'] = parseManager.get_header()
+    request.session['tag_checklist'] = "data_headers_selected"
 
     return render(request, 'data_header.html')
+
+
+def select_location_of_data(request):
+
+    data_selected = request.POST.getlist('data_headers_selected')
+    print data_selected
+    request.session['title'] = "Select Location"
+    request.session['tag_checklist'] = "location_headers_selected"
+    return render(request, 'data_header.html')
+

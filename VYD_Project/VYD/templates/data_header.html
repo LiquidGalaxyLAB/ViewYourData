@@ -4,40 +4,74 @@
     <nav>
         <div class="nav-wrapper light-blue darken-4 ">
 
+
             <div class="brand-logo center">
-                <span class="white-text text-darken-2"><H4 class="center-align ">Select data</H4></span>
+                <span class="white-text text-darken-2"><H4 class="center-align ">Select Data and Location</H4></span>
             </div>
         </div>
     </nav>
 
 
-    <div class="row center center-align"  style="padding-top:10%">
+    <div class="row" >
 
-        <div class="col s12 m3 l2"><p></p></div>
-        <div class="col s12 m6 l8"><p>
+        <form action="VYD/layers/create/selectData">
+
+
+
+        <div class="col s6 ">
+          <div class="card-panel blue lighten-5">
+
+                    <div class=" center center-align">
+                        <div class="section">
+                            <h5>Select Data</h5>
+                            <p>Select Data for create the layer</p>
+                          </div>
+                          <div class="divider"></div>
+                            <span class="white-text">
+                          {% for header in request.session.headers %}
+                            <p>
+                              <input name="data_headers_selected" type="checkbox" id="data_{{ forloop.counter }}" />
+                              <label for="data_{{ forloop.counter }}">{{header}}</label>
+                            </p>
+                          {% empty %}
+                            <li class="list-group-item">No headers something is wrong</li>
+                          {% endfor %}
+                            </span>
+                    </div>
+
+        </div>
+
+
+        </div>
+        <div class="col s6 "><p>
+          <div class="card-panel blue lighten-5">
+
             <div class=" center center-align">
-
-              <form action="VYD/layers/create/selectData">
-
+                    <div class="section">
+                            <h5>Select Location</h5>
+                            <p>Select Location for localize the data</p>
+                          </div>
+                <div class="divider"></div>
+            <span class="white-text">
                   {% for header in request.session.headers %}
                     <p>
-                      <input name="data_headers" type="checkbox" id="{{ forloop.counter }}" />
-                      <label for="{{ forloop.counter }}">{{header}}</label>
+                      <input name="location_headers_selected" type="checkbox" id="location_{{ forloop.counter }}" />
+                      <label for="location_{{ forloop.counter }}">{{header}}</label>
                     </p>
                   {% empty %}
                     <li class="list-group-item">No headers something is wrong</li>
                   {% endfor %}
-
-
-                <p>
-                  <input name="group1" type="checkbox" id="test1" />
-                  <label for="test1">Red</label>
-                </p>
-              </form>
-
+            </span>
             </div>
+
         </div>
 
+        </div>
+<button class="btn waves-effect waves-light right-align" type="submit" name="action">Submit
+    <i class="material-icons">send</i>
+  </button>
+
+        </form>
     </div>
 
 
