@@ -74,6 +74,7 @@ def select_data_of_header(request):
 
     # I rest 1 for prosecute correctly on the parseManager
     if type_location == "coor":
+        print "HEy I'm coordinates"
         parseManager.coor_lat = int(request.POST['location_lat'])-1
         parseManager.coor_lng = int(request.POST['location_lng'])-1
         print "Coor Lat: "+ str(parseManager.coor_lat)
@@ -107,7 +108,7 @@ def redirect_for_type_location(request):
     if typelocation == "1":
         return render(request, 'location_name_selector.html')
     elif typelocation == "2":
-        return render(request, 'view_data_location_selected.html')
+        return render(request, 'location_coordinates_selector.html')
 
 
 @csrf_exempt
@@ -121,13 +122,14 @@ def parse_data(request):
     parseManager = ParseManager.getParseManager("")
 
     if parseManager.type_loc == "name":
-        parseManager.get_data_by_location(parseManager.data_loc, parseManager.location_name, parseManager.extra_location)
+        print parseManager.get_data_by_location(parseManager.data_loc, parseManager.location_name, parseManager.extra_location)
     elif parseManager.type_loc == "coor":
-        parseManager.get_data_by_coordinates(parseManager.coor_lat, parseManager.coor_lng, parseManager.data_loc)
+        print parseManager.get_data_by_coordinates(parseManager.coor_lat, parseManager.coor_lng, parseManager.data_loc)
 
     else:
         return render(request, 'error_page.html')
 
+    print "DATA SET In PARSE MANAGER : "
     print parseManager.data
     return HttpResponseRedirect('/VYD/layers/create/viewDataAndLocation/')
 
@@ -137,11 +139,12 @@ def view_data_and_location_selected(request):
 
     parseManager = ParseManager.getParseManager("")
 
-    #request.session['data'] = ParseManager.data
+    request.session['data'] = ParseManager.data
 
-    print "DATA SET In PARSE MANAGER : "
+    request.session['hola'] = "HOLA MUNDO"
+
+    print "DATA In PARSE MANAGER : "
     print parseManager.data
-
 
 
     return render(request, 'view_data_location_selected.html', {'data_set': ParseManager.data})

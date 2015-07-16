@@ -51,11 +51,11 @@ class ParseManager(object):
             raise NoParserImplemented("No parser implemented for this type of file " + self.file_name)
 
     def get_data_by_location(self, data_position, location_name_point, location_extra_name):
-        self.Parse = self.parser.get_set_by_data_and_location(data_position, location_name_point, location_extra_name)
+        self.data = self.parser.get_set_by_data_and_location(data_position, location_name_point, location_extra_name)
         return self.data
 
     def get_data_by_coordinates(self, pos_latitude, pos_longitude, data_positions):
-        self.data = self.parser.get_set_by_data_and_coordinates(data_positions, pos_latitude, pos_longitude)
+        self.parseManager.data  = self.parser.get_set_by_data_and_coordinates(data_positions, pos_latitude, pos_longitude)
         return self.data
 
     def get_type_file(self):

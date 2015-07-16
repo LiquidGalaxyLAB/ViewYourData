@@ -15,6 +15,7 @@
     <div class="row" >
 
         <form method="post" action="/VYD/layers/create/selectData">
+            <input name=”type_location” type=”hidden”  value=coor>
 
         <div class="col s6 "><p>
           <div class="card-panel blue lighten-5">
@@ -26,11 +27,9 @@
                           </div>
                 <div class="divider"></div>
             <span class="white-text">
-                <input type=”hidden” name=”type_location” value=”coor”>
-                <input type=”hidden” name=”data_loc” value=”None”>
                   {% for header in request.session.headers %}
                     <p>
-                      <input name="location_lat" type="checkbox" id="lat_{{ forloop.counter }}" />
+                      <input name="location_lat" type="checkbox" id="lat_{{ forloop.counter }}"  value="{{ forloop.counter }}"/>
                       <label for="lat_{{ forloop.counter }}">{{header}}</label>
                     </p>
                   {% empty %}
@@ -54,7 +53,7 @@
             <span class="white-text">
                   {% for header in request.session.headers %}
                     <p>
-                      <input name="location_lng" type="checkbox" id="lon_{{ forloop.counter }}" />
+                      <input name="location_lng" type="checkbox" id="lon_{{ forloop.counter }}" value="{{ forloop.counter }}" />
                       <label for="lon_{{ forloop.counter }}">{{header}}</label>
                     </p>
                   {% empty %}
