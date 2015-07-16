@@ -19,8 +19,8 @@ urlpatterns = [
     url(r'^layers/create/parseData', views.parse_data),
     url(r'^layers/create/viewDataAndLocation', views.view_data_and_location_selected),
     url(r'^layers/create/error', views.error_page),
-
-
+    url(r'^layers/create/presentationMenu', views.presentation_selector),
+    url(r'^layers/create/makeKML', views.make_KML),
 
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

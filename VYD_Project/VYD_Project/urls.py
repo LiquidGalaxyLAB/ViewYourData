@@ -19,6 +19,6 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^VYD/', include('VYD.urls')),
-    url(r'^KmlManagement/', include('kmls_management.urls')),
+    url(r'^VYD/KmlManager/', include('kmls_management.urls')),
 
 ]

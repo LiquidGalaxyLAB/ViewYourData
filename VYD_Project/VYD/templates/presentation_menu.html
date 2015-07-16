@@ -1,0 +1,64 @@
+{% extends "template.html" %}
+{% block content %}
+
+    <nav>
+        <div class="nav-wrapper light-blue darken-4 ">
+
+
+            <div class="brand-logo center">
+                <span class="white-text text-darken-2"><H4 class="center-align ">Select Data and Location</H4></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="row" >
+
+
+        <div class="col s12 ">
+          <div class="card-panel blue lighten-5">
+              <input name=”type_location” type=”hidden”  value=data>
+
+                    <div class=" center center-align">
+                         <div class="row">
+                             <form method="post" action="/VYD/layers/create/makeKML">
+                                <div class="col s12 m7">
+                                  <div class="card">
+                                    <div class="card-image">
+                                      <img height="60" width="60" src="http://www.clker.com/cliparts/w/r/B/D/P/5/map-marker-small.svg">
+                                      <span class="card-title">Markers</span>
+                                    </div>
+                                    <div class="card-content">
+                                         <form method="post" action="/VYD/layers/create/makeKml">
+                                      <p>Show your data with personalized markers, set here the url of your marker</p>
+                                        <input name=”icon_marker” type=”hidden”  value=name>
+                                        <input name=”kml_name” type=”hidden”  value=name>
+                                             </form>
+                                    </div>
+                                    <div class="card-action">
+                                              <button class="btn waves-effect waves-light right-align" type="submit" name="action">Make it
+                                                    <i class="material-icons">send</i>
+                                            </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                         </div>
+                    </div>
+          </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+{% endblock content %}

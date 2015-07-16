@@ -6,3 +6,5 @@ mkdir /tmp/VYD
 mkdir /tmp/VYD/data_set
 mkdir /tmp/kml
 
+touch /tmp/kml/kmls.txt
+

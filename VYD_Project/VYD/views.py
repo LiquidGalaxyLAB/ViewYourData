@@ -3,6 +3,8 @@ from django.shortcuts import render
 from django.http import HttpResponseRedirect
 import sys
 from django.views.decorators.csrf import csrf_exempt
+from Utils.PresentationManager.placemark_generator import MarkersTour
+from kmls_management.models import Kml
 
 from .forms import UrlForm
 from Utils.ParseManager.parse_manager import ParseManager
@@ -156,3 +158,26 @@ def view_data_and_location_selected(request):
 @csrf_exempt
 def error_page(request):
     return render(request, 'error_page.html')
+
+@csrf_exempt
+def presentation_selector(request):
+    return render(request, 'presentation_menu.html')
+
+@csrf_exempt
+def make_KML(request):
+
+    kml_name = request.POST.get('kml_name')
+    icon_marker = request.POST.get('icon_marker')
+
+    parseManager = ParseManager.getParseManager("")
+
+    print parseManager.data
+
+    markerTours = MarkersTour(parseManager.data[0], "Test", "http://3.bp.blogspot.com/-qu3E7CIu4_E/T40o87HKKDI/AAAAAAAAAz8/b4hKRLCJbNs/s1600/wally.png")
+
+    markerTours.makeFile()
+
+    kml_file = Kml(name="Test.kml", visibility=False )
+    kml_file.save()
+    return HttpResponseRedirect('/VYD/KmlManager/kmls')
+

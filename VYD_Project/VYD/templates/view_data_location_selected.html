@@ -53,9 +53,11 @@
             </div>
         </div>
     </nav>
-        <button class="btn waves-effect waves-light right-align" type="submit" name="action">Submit
+        <form method="post" action="/VYD/layers/create/presentationMenu">
+        <button class="btn waves-effect waves-light right-align" type="submit" name="action" action="/VYD/layers/create/presentationMenu">Submit
             <i class="material-icons">send</i>
         </button>
+        </form>
     <div class="row"  >
 
         {% for data in data_set %}

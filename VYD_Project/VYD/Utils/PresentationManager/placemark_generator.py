@@ -5,7 +5,7 @@ from pykml.factory import KML_ElementMaker as KML
 from pykml.factory import GX_ElementMaker as GX
 from pykml.parser import Schema
 from lxml import etree
-
+import os
 
 class MarkersTour(object):
 
@@ -182,5 +182,5 @@ class MarkersTour(object):
         print etree.tostring(tour_doc, pretty_print=True)
 
         # output a KML file (named based on the Python script)
-        outfile = file(self.kml_name+'.kml','w')
+        outfile = file("kmls_management/static/"+self.kml_name+'.kml','w')
         outfile.write(etree.tostring(tour_doc, pretty_print=True))

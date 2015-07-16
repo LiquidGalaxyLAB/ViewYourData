@@ -1,0 +1,23 @@
+{% extends "template_manage.html" %}
+{% block content %}
+
+
+  <div class="collection">
+      {% for kml in kmls %}
+
+      <a onclick="syncData({{kml.id}})" class="collection-item">{{kml.name}}
+          <span class="badge">
+          <a   class="waves-effect waves-light btn" href="/VYD/KmlManager/deleteKml/{{kml.id}}">
+              <i class="material-icons left"></i>Delete
+          </a>
+          </span>
+      </a>
+
+      {% empty %}
+           <li class="list-group-item">No headers something is wrong</li>
+      {% endfor %}
+  </div>
+
+
+
+{% endblock content %}

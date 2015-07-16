@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>VYD</title>
+
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="/static/css/materialize.min.css"  media="screen,projection"/>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <style>
+      #map-canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    <script>
+
+        function syncData(id) {
+            console.log("call to download Page is working!") // sanity check
+
+            var formData = {id:id,};
+            $.ajax({
+                url : "/VYD/KmlManager/showKMLOrHide/", // the endpoint
+                type : "POST", // http method
+                data : formData,
+
+                // handle a successful response
+                success : function(json) {
+                    console.log("success"); // another sanity check
+                    window.location.replace("/VYD/KmlManager/kmls");
+                },
+
+                // handle a non-successful response
+                error : function(xhr,errmsg,err) {
+
+                    console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
+                }
+            });
+        };
+
+        function parseData() {
+            console.log("call to Parse Data is working!") // sanity check
+            $.ajax({
+                url : "/VYD/layers/create/parseData/", // the endpoint
+                type : "POST", // http method
+
+                // handle a successful response
+                success : function(json) {
+                    console.log("success"); // another sanity check
+                    window.location.replace("/VYD/layers/create/viewDataAndLocation");
+                },
+
+                // handle a non-successful response
+                error : function(xhr,errmsg,err) {
+                    console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
+                }
+            });
+        };
+
+
+    </script>
+
+
+</head>
+<body bgcolor="#e8eaf6">
+
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="/static/js/materialize.min.js"></script>
+
+<div class="container">
+
+    <nav>
+        <div class="nav-wrapper  indigo darken-4">
+            <a  href="#" class="brand-logo center">Liquid Galaxy</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+            </ul>
+        </div>
+    </nav>
+
+{% block content %}
+
+{% endblock content %}
+
+</div>
+</body>
+</html>
