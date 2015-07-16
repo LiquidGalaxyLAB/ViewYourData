@@ -124,7 +124,7 @@ def parse_data(request):
     if parseManager.type_loc == "name":
         print parseManager.get_data_by_location(parseManager.data_loc, parseManager.location_name, parseManager.extra_location)
     elif parseManager.type_loc == "coor":
-        print parseManager.get_data_by_coordinates(parseManager.coor_lat, parseManager.coor_lng, parseManager.data_loc)
+        print parseManager.get_data_by_coordinates(parseManager.data_loc, parseManager.coor_lat, parseManager.coor_lng)
 
     else:
         return render(request, 'error_page.html')

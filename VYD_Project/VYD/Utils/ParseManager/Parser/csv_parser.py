@@ -73,8 +73,8 @@ class CsvParser(parser.Parser):
         for row in self.csv_Reader:
 
             if len(row) != 0:
-                loc = float(row[location_point].decode(self.encoding))
-                data = float(row[data_point].decode(self.encoding))
+                loc = row[location_point].decode(self.encoding)
+                data = row[data_point].decode(self.encoding)
 
                 data_row = {'data': data}
                 coor = coordinates.get_coordinates_by_location([loc, location_extra])
