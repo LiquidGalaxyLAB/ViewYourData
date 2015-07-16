@@ -15,6 +15,8 @@ class CsvParser(parser.Parser):
 
         self.csv_file = open(self.filename, 'rb')
         dialect = csv.Sniffer().sniff(self.csv_file.read(1024))
+
+        print "Delimiter: ' " + str(dialect.delimiter) + " ' "
         self.csv_Reader = csv.reader(self.csv_file, dialect)
         self.csv_file.seek(0)
 
@@ -40,18 +42,20 @@ class CsvParser(parser.Parser):
         lose_rows = []
 
         for row in self.csv_Reader:
-            lat = row[latitude_point].decode(self.encoding)
-            lng = row[longitude_point].decode(self.encoding)
-            data = row[data_point].decode(self.encoding)
+            if len(row) != 0:
 
-            data_row = {'data': data}
+                lat = row[latitude_point].decode(self.encoding)
+                lng = row[longitude_point].decode(self.encoding)
+                data = row[data_point].decode(self.encoding)
 
-            if coordinates.correct_coordinates(lat, lng):
-                data_row['lat'] = lat
-                data_row['lng'] = lng
-                data_set.append(data_row)
-            else:
-                lose_rows.append(row)
+                data_row = {'data': data}
+
+                if coordinates.correct_coordinates(lat, lng):
+                    coordinate = {'lat': lat, 'lng': lng}
+                    data_row['coordinates'] = coordinate
+                    data_set.append(data_row)
+                else:
+                    lose_rows.append(row)
 
         return data_set, lose_rows
 
@@ -64,17 +68,19 @@ class CsvParser(parser.Parser):
         lose_rows = []
 
         for row in self.csv_Reader:
-            loc = row[location_point].decode(self.encoding)
-            data = row[data_point].decode(self.encoding)
 
-            data_row = {'data': data}
-            coordinates = coordinates.get_coordinates_by_location([loc, location_extra])
+            if len(row) != 0:
+                loc = row[location_point].decode(self.encoding)
+                data = row[data_point].decode(self.encoding)
 
-            if coordinates is not None:
-                data_row.update(coordinates)
-                data_set.append(data_row)
-            else:
-                lose_rows.append(row)
+                data_row = {'data': data}
+                coor = coordinates.get_coordinates_by_location([loc, location_extra])
+
+                if coor is not None:
+                    data_row['coordinates'] = coor
+                    data_set.append(data_row)
+                else:
+                    lose_rows.append(row)
 
         return data_set, lose_rows
 

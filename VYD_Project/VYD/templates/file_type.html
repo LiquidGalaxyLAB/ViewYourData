@@ -27,18 +27,24 @@
                       </span>
                     </div>
                   </div>
+                    <label>Select the type of location</label>
+                    <select name="type_location" form="form1" class="browser-default">
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">Location name</option>
+                      <option value="2">Coordinates</option>
+                    </select>
+
+
                 </div>
             </div>
 
     </div>
 
-
-
-
         <div class="col s12 m3 l2"><p></p></div>
         <div class="col s12">
-            <form action="/VYD/layers/create/selectData">
-                <button class="btn waves-effect waves-light" type="submit" >Continue
+            <form id ="form1" method="post" action="/VYD/layers/create/selectLocation">
+
+                <button class="btn waves-effect waves-light" value="Submit" type="submit" >Continue
                      <i class="mdi-content-send right"></i>
                 </button>
             </form>

@@ -12,6 +12,14 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
+    <style>
+      #map-canvas {
+        width: 500px;
+        height: 400px;
+      }
+    </style>
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
 
     <script>
 
@@ -29,7 +37,26 @@
 
                 // handle a non-successful response
                 error : function(xhr,errmsg,err) {
+                    window.location.replace("/VYD/layers/create/error");
+                    console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
+                }
+            });
+        };
 
+        function parseData() {
+            console.log("call to download Page is working!") // sanity check
+            $.ajax({
+                url : "/VYD/layers/create/parseData/", // the endpoint
+                type : "POST", // http method
+
+                // handle a successful response
+                success : function(json) {
+                    console.log("success"); // another sanity check
+                    window.location.replace("/VYD/layers/create/viewDataAndLocation");
+                },
+
+                // handle a non-successful response
+                error : function(xhr,errmsg,err) {
                     console.log(xhr.status + ": " + xhr.responseText); // provide a bit more info about the error to the console
                 }
             });

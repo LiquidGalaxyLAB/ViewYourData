@@ -1,0 +1,7 @@
+chardet==2.3.0
+Django==1.8.2
+ecdsa==0.13
+paramiko==1.15.2
+pycrypto==2.6.1
+requests==2.7.0
+wget==2.2

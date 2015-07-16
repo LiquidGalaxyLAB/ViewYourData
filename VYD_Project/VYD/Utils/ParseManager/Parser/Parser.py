@@ -8,6 +8,16 @@ class Parser(object):
     def __init__(self, filename):
         self.filename = filename
         self.encoding = self.get_encoding()
+        self.file = None
+
+
+
+    def open_file(self):
+        self.file = open(self.filename, 'rb')
+
+    def close_file(self):
+        self.file.close()
+
 
     # Return a set of the data types
     @abstractmethod
@@ -22,8 +32,8 @@ class Parser(object):
     # Example:
     # data_set = get_set_of_data_with_location(0,1,"Barcelona")
     # data = data_set[0]
-    # data['lat']
-    # data['lng']
+    # data['coordinates']['lat']
+    # data['coordinates']['lng']
     # data['data']
     #
     # bad_rows = data_set[1]
@@ -41,8 +51,8 @@ class Parser(object):
     # Example:
     # data_set = get_set_of_data_with_location(0,1,"Barcelona")
     # data = data_set[0]
-    # data['lat']
-    # data['lng']
+    # data['coordinates']['lat']
+    # data['coordinates']['lng']
     # data['data']
     #
     # bad_rows = data_set[1]

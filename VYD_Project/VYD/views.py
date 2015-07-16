@@ -22,7 +22,7 @@ def submit_url(request):
 
             print url
 
-            parseManager = ParseManager.getParseManager(url)
+            parseManager = ParseManager.getParseManager(url, True)
 
             # redirect to a new URL:
             return HttpResponseRedirect('/VYD/layers/create/downloadPage/')
@@ -63,21 +63,84 @@ def download_file(request):
 def file_info_view(request):
     return render(request, 'file_type.html')
 
-
+@csrf_exempt
 def select_data_of_header(request):
+
+    type_location = request.POST.get(u"\u201dtype_location\u201d")
+    data_loc = request.POST.get('data_loc')
+    parseManager = ParseManager.getParseManager("")
+
+    print "Location data"
+
+    # I rest 1 for prosecute correctly on the parseManager
+    if type_location == "coor":
+        parseManager.coor_lat = int(request.POST['location_lat'])-1
+        parseManager.coor_lng = int(request.POST['location_lng'])-1
+        print "Coor Lat: "+ str(parseManager.coor_lat)
+        print "Coor Lng: "+ str(parseManager.coor_lng)
+
+    elif type_location == "name":
+        parseManager.extra_location = request.POST['extra_location']
+        parseManager.location_name = int(request.POST['location_headers_selected'])-1
+        print "Location: " + str(parseManager.location_name)
+        print "Extra Location" + parseManager.extra_location
+
+    request.session['headers'] = parseManager.get_header()
+
+    if data_loc == None:
+        parseManager.type_loc = type_location
+        return render(request, 'data_header_selector.html')
+    else:
+        parseManager.data_loc = int(data_loc)-1
+        print "Data loc: " + str(parseManager.data_loc)
+        return HttpResponseRedirect('/VYD/layers/create/loadParseData')
+
+
+
+@csrf_exempt
+def redirect_for_type_location(request):
 
     parseManager = ParseManager.getParseManager("")
     request.session['headers'] = parseManager.get_header()
-    request.session['tag_checklist'] = "data_headers_selected"
 
-    return render(request, 'data_header.html')
+    typelocation = request.POST['type_location']
+    if typelocation == "1":
+        return render(request, 'location_name_selector.html')
+    elif typelocation == "2":
+        return render(request, 'view_data_location_selected.html')
 
 
-def select_location_of_data(request):
+@csrf_exempt
+def load_parse_data(request):
+    return render(request, 'load_parse_data.html')
 
-    data_selected = request.POST.getlist('data_headers_selected')
-    print data_selected
-    request.session['title'] = "Select Location"
-    request.session['tag_checklist'] = "location_headers_selected"
-    return render(request, 'data_header.html')
 
+@csrf_exempt
+def parse_data(request):
+
+    parseManager = ParseManager.getParseManager("")
+
+    if parseManager.type_loc == "name":
+        parseManager.get_data_by_location(parseManager.data_loc, parseManager.location_name, parseManager.extra_location)
+    elif parseManager.type_loc == "coor":
+        parseManager.get_data_by_coordinates(parseManager.coor_lat, parseManager.coor_lng, parseManager.data_loc)
+
+    else:
+        return render(request, 'error_page.html')
+
+    print parseManager.data
+    return HttpResponseRedirect('/VYD/layers/create/viewDataAndLocation/')
+
+
+@csrf_exempt
+def view_data_and_location_selected(request):
+
+    parseManager = ParseManager.getParseManager("")
+
+    request.session['data'] = ParseManager.data
+
+    return render(request, 'view_data_location_selected.html')
+
+@csrf_exempt
+def error_page(request):
+    return render(request, 'error_page.html')

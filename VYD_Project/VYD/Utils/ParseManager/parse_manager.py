@@ -2,9 +2,7 @@ from download.downloadmanager import DownloadDataSetManager
 from parser.csv_parser import CsvParser
 from exception import NoParserImplemented
 
-
 __author__ = 'hellfish90'
-
 
 class ParseManager(object):
     file_type = None
@@ -13,9 +11,21 @@ class ParseManager(object):
     url = None
     parser = None
     downloadManager = None
+    data = None
+
+    extra_location = None
+    location_name = None
+    coor_lat = None
+    coor_lng = None
+    data_loc = None
+    type_loc = None
 
     @staticmethod
-    def getParseManager(url):
+    def getParseManager(url, new = False):
+
+        if new == True:
+            ParseManager.downloadManager = None
+
         if ParseManager.downloadManager != None:
             return ParseManager.downloadManager
         else:
@@ -28,7 +38,6 @@ class ParseManager(object):
         self.downloadManager.set_url(self.url)
 
     def parse(self):
-
         self.downloadManager.download()
         self.file_type = self.downloadManager.get_type()
         self.file_path = self.downloadManager.get_file_path()
@@ -40,15 +49,15 @@ class ParseManager(object):
         else:
             raise NoParserImplemented("No parser implemented for this type of file " + self.file_name)
 
-
-    def get_data_by_location(self, header_position, extra, data_positions):
-        pass
+    def get_data_by_location(self, data_position, location_name_point, location_extra_name):
+        self.data = self.parser.get_set_by_data_and_location(data_position, location_name_point, location_extra_name)
+        return self.data
 
     def get_data_by_coordinates(self, pos_latitude, pos_longitude, data_positions):
-        pass
+        self.data = self.parser.get_set_by_data_and_coordinates(data_positions, pos_latitude, pos_longitude)
+        return self.data
 
     def get_type_file(self):
-
         return self.file_type
 
     def get_file_name(self):
@@ -59,10 +68,12 @@ class ParseManager(object):
 
 
 if __name__ == '__main__':
-    parse_manager = ParseManager("http://www.amsterdamopendata.nl/files/Festivals.csv")
+    parse_manager = ParseManager("http://mappe.regione.toscana.it/db-webgis/biblio/example_postgis.jsp?format=csv")
 
     parse_manager.parse()
 
     print parse_manager.get_type_file()
 
-    print parse_manager.get_header()
+    print len(parse_manager.get_header())
+
+    print parse_manager.get_data_by_location(1,5,"")
