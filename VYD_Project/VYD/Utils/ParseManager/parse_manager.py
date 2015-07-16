@@ -54,8 +54,8 @@ class ParseManager(object):
         self.data = self.parser.get_set_by_data_and_location(data_position, location_name_point, location_extra_name)
         return self.data
 
-    def get_data_by_coordinates(self, pos_latitude, pos_longitude, data_positions):
-        self.parseManager.data  = self.parser.get_set_by_data_and_coordinates(data_positions, pos_latitude, pos_longitude)
+    def get_data_by_coordinates(self, data_positions,pos_latitude, pos_longitude ):
+        self.data  = self.parser.get_set_by_data_and_coordinates(data_positions, pos_latitude, pos_longitude)
         return self.data
 
     def get_type_file(self):

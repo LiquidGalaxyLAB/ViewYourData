@@ -44,8 +44,11 @@ class CsvParser(parser.Parser):
         for row in self.csv_Reader:
             if len(row) != 0:
 
-                lat = row[latitude_point].decode(self.encoding)
-                lng = row[longitude_point].decode(self.encoding)
+                lat = float(row[latitude_point].decode(self.encoding))
+                lng = float(row[longitude_point].decode(self.encoding))
+
+                print lat
+                print lng
                 data = row[data_point].decode(self.encoding)
 
                 data_row = {'data': data}
@@ -57,7 +60,7 @@ class CsvParser(parser.Parser):
                 else:
                     lose_rows.append(row)
 
-        return data_set, lose_rows
+        return [data_set, lose_rows]
 
     def get_set_by_data_and_location(self, data_point, location_point, location_extra=""):
 
@@ -70,8 +73,8 @@ class CsvParser(parser.Parser):
         for row in self.csv_Reader:
 
             if len(row) != 0:
-                loc = row[location_point].decode(self.encoding)
-                data = row[data_point].decode(self.encoding)
+                loc = float(row[location_point].decode(self.encoding))
+                data = float(row[data_point].decode(self.encoding))
 
                 data_row = {'data': data}
                 coor = coordinates.get_coordinates_by_location([loc, location_extra])
@@ -82,7 +85,7 @@ class CsvParser(parser.Parser):
                 else:
                     lose_rows.append(row)
 
-        return data_set, lose_rows
+        return [data_set, lose_rows]
 
     def get_data(self):
 

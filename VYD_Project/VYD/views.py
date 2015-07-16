@@ -129,8 +129,6 @@ def parse_data(request):
     else:
         return render(request, 'error_page.html')
 
-    print "DATA SET In PARSE MANAGER : "
-    print parseManager.data
     return HttpResponseRedirect('/VYD/layers/create/viewDataAndLocation/')
 
 
@@ -139,15 +137,21 @@ def view_data_and_location_selected(request):
 
     parseManager = ParseManager.getParseManager("")
 
-    request.session['data'] = ParseManager.data
+    request.session['data_set'] = ParseManager.data
 
-    request.session['hola'] = "HOLA MUNDO"
+    setData=[]
+    setCoordinates = []
 
-    print "DATA In PARSE MANAGER : "
-    print parseManager.data
+    for line in parseManager.data[0]:
+        print line
+        setData.append(line['data'])
 
 
-    return render(request, 'view_data_location_selected.html', {'data_set': ParseManager.data})
+    #print "DATA In PARSE MANAGER : "
+    #print parseManager.data
+
+
+    return render(request, 'view_data_location_selected.html', {'data_set': parseManager.data[0]})
 
 @csrf_exempt
 def error_page(request):
