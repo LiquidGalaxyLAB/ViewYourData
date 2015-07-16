@@ -137,9 +137,14 @@ def view_data_and_location_selected(request):
 
     parseManager = ParseManager.getParseManager("")
 
-    request.session['data'] = ParseManager.data
+    #request.session['data'] = ParseManager.data
 
-    return render(request, 'view_data_location_selected.html')
+    print "DATA SET In PARSE MANAGER : "
+    print parseManager.data
+
+
+
+    return render(request, 'view_data_location_selected.html', {'data_set': ParseManager.data})
 
 @csrf_exempt
 def error_page(request):

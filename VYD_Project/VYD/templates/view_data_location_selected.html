@@ -5,7 +5,7 @@
         function load_markers(){
 
             var points = [];
-            {% for data in request.session.data %}
+            {% for data in data_set %}
                 points.push([data['coordinates']['lat'], data['coordinates']['lng'], data['data']]);
             {% endfor %}
 

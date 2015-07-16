@@ -11,6 +11,7 @@ class ParseManager(object):
     url = None
     parser = None
     downloadManager = None
+    parseManager = None
     data = None
 
     extra_location = None
@@ -24,13 +25,13 @@ class ParseManager(object):
     def getParseManager(url, new = False):
 
         if new == True:
-            ParseManager.downloadManager = None
+            ParseManager.parseManager = None
 
-        if ParseManager.downloadManager != None:
-            return ParseManager.downloadManager
+        if ParseManager.parseManager != None:
+            return ParseManager.parseManager
         else:
-            ParseManager.downloadManager=ParseManager(url)
-            return ParseManager.downloadManager
+            ParseManager.parseManager=ParseManager(url)
+            return ParseManager.parseManager
 
     def __init__(self, url):
         self.url = url
@@ -50,7 +51,7 @@ class ParseManager(object):
             raise NoParserImplemented("No parser implemented for this type of file " + self.file_name)
 
     def get_data_by_location(self, data_position, location_name_point, location_extra_name):
-        self.data = self.parser.get_set_by_data_and_location(data_position, location_name_point, location_extra_name)
+        self.Parse = self.parser.get_set_by_data_and_location(data_position, location_name_point, location_extra_name)
         return self.data
 
     def get_data_by_coordinates(self, pos_latitude, pos_longitude, data_positions):
