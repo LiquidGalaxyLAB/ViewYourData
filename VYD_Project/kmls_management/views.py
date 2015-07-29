@@ -22,8 +22,10 @@ def syncKML(request):
     print "Hola"
     if kml.get_visivility():
         kml.visibility = False
+        kml.save()
     else:
         kml.visibility = True
+        kml.save()
 
     syncKmlsFile()
     syncKmlsToGalaxy()

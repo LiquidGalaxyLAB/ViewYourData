@@ -69,7 +69,7 @@ class ParseManager(object):
 
 
 if __name__ == '__main__':
-    parse_manager = ParseManager("http://mappe.regione.toscana.it/db-webgis/biblio/example_postgis.jsp?format=csv")
+    parse_manager = ParseManager("https://data.lab.fiware.org/vi/dataset/76f7abda-2b8b-4af2-94a5-287f4822afec/resource/ee9e5b7b-e8f4-467b-b97c-a70acc0fcafa/download/olivo0415.csv")
 
     parse_manager.parse()
 
@@ -77,4 +77,4 @@ if __name__ == '__main__':
 
     print len(parse_manager.get_header())
 
-    print parse_manager.get_data_by_location(1,5,"")
+    print parse_manager.get_data_by_location(0,0,"Lleida")
