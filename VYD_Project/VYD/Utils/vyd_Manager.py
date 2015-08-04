@@ -1,12 +1,14 @@
 from ParseManager.parse_manager import ParseManager
 from PresentationManager.placemark_generator import MarkersTour
+from PresentationManager.polygon_generator import polygon_generator
 
 __author__ = 'Marc'
 
 
 if __name__ == '__main__':
 
-    parse_manager = ParseManager("https://data.lab.fiware.org/vi/dataset/3c201404-2a1f-4f96-940c-cad892899ea8/resource/6e29f557-7efa-4f5e-8472-914e0a6ec437/download/equipamientos.csv")
+    url = "https://data.lab.fiware.org/dataset/76f7abda-2b8b-4af2-94a5-287f4822afec/resource/1b9ecca2-80a2-43fe-b7b2-a91b697be020/download/plantago0415.csv"
+    parse_manager = ParseManager(url)
 
     parse_manager.parse()
 
@@ -14,9 +16,14 @@ if __name__ == '__main__':
 
     print len(parse_manager.get_header())
 
-    data_set = parse_manager.get_data_by_coordinates(1,2,3)
+    data_set = parse_manager.get_data_by_location(5,0,"Spain")
+
+    print data_set
+
+    polygon_manager = polygon_generator(data_set[0], "test_polygon", "green", 5000)
+
+    polygon_manager.polycicle_generator()
 
 
-
-    markersTour = MarkersTour(data_set[0], "test", "https://www.sideshowtoy.com/wp-content/uploads/2013/06/1000761-product-silob.png")
-    markersTour.makeFile()
+    #markersTour = MarkersTour(data_set[0], "test", "https://www.sideshowtoy.com/wp-content/uploads/2013/06/1000761-product-silob.png")
+    #markersTour.makeFile()
