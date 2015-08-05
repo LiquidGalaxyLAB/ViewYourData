@@ -25,7 +25,14 @@
                 <div class="divider"></div>
                 <form method="post" action="/VYD/layers/create/selectData">
                     <span class="white-text">
-                        <input name=”type_location” type=”hidden”  value=name>
+
+                    <div class="row" >
+                    <div class="input-field col s6">
+                        <input name="extra_location" id="extra_location" type="text" class="validate">
+                        <label for="extra_location">Extra data of Location</label>
+                    </div>
+                    </div>
+                    <div class="row" >
 
 
                           {% for header in request.session.headers %}
@@ -36,11 +43,9 @@
                           {% empty %}
                             <li class="list-group-item">No headers something is wrong</li>
                           {% endfor %}
+                        </div>
                     </span>
-                    <div class="input-field col s6">
-                        <input name="extra_location" id="extra_location" type="text" class="validate">
-                        <label for="extra_location">Extra data of Location</label>
-                    </div>
+                    <input type=”hidden” name=”type_location”  value=name>
                     <button class="btn waves-effect waves-light right-align" type="submit" name="action">Submit
                         <i class="material-icons">send</i>
                     </button>

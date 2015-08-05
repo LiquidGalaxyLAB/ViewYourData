@@ -32,9 +32,9 @@ class Parser(object):
     # Example:
     # data_set = get_set_of_data_with_location(0,1,"Barcelona")
     # data = data_set[0]
-    # data['coordinates']['lat']
-    # data['coordinates']['lng']
-    # data['data']
+    # data[0]['coordinates']['lat']
+    # data[0]['coordinates']['lng']
+    # data[0]['data']
     #
     # bad_rows = data_set[1]
     # bad_row = bad_rows[0]
@@ -51,9 +51,9 @@ class Parser(object):
     # Example:
     # data_set = get_set_of_data_with_location(0,1,"Barcelona")
     # data = data_set[0]
-    # data['coordinates']['lat']
-    # data['coordinates']['lng']
-    # data['data']
+    # data[0]['coordinates']['lat']
+    # data[0]['coordinates']['lng']
+    # data[0]['data']
     #
     # bad_rows = data_set[1]
     # bad_row = bad_rows[0]

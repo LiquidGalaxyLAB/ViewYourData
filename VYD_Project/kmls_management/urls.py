@@ -19,6 +19,6 @@ from kmls_management import views
 urlpatterns = [
     url(r'^kmls', views.kmlManagerView),
     url(r'^showKMLOrHide', views.syncKML),
-    url(r'^deleteKML', views.deleteKML),
+    url(r'^(?P<pk>\d+)/delete', views.deleteKML),
     url(r'^syncKmls', views.syncKmlsToGalaxy),
 ]

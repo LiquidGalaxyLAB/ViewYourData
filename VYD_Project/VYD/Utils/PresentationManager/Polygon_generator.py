@@ -2,22 +2,18 @@ __author__ = 'Marc'
 import simplekml
 from polycircles import polycircles
 
-
-
 class polygon_generator(object):
 
-    def __init__(self, data_set, kml_name, color, altitude):
+    def __init__(self, data_set, kml_name, color, altitude, multiplier):
         self.data_set = data_set
         self.kml_name = kml_name
         self.color = self.set_color(color)
         self.altitude = altitude
+        self.multiplier = multiplier
 
     def make_polygons_file(self):
         kml = simplekml.Kml()
-
         pol = kml.newpolygon(name='A Polygon')
-
-
         polygon_points = []
         first = None
 
@@ -44,8 +40,14 @@ class polygon_generator(object):
         kml.save(""+self.kml_name+".kml")
 
     def set_color(self, color):
-
-        return simplekml.Color.yellow
+        if color == "Yellow":
+            return simplekml.Color.yellow
+        if color == "Red":
+            return simplekml.Color.red
+        if color == "Green":
+            return simplekml.Color.green
+        if color == "Blue":
+            return simplekml.Color.blue
 
 
     def make_polygons_bar_char_file(self):
@@ -103,7 +105,7 @@ class polygon_generator(object):
 
             polycircle = polycircles.Polycircle(latitude=data['coordinates']['lat'],
                                         longitude=data['coordinates']['lng'],
-                                        radius=(int(data['data'])+1)*1000,
+                                        radius=(int(data['data'])+1)*self.multiplier,
                                         number_of_vertices=36
                                         )
 
@@ -129,7 +131,7 @@ class polygon_generator(object):
             polygon_circle.append(polycircle)
 
 
-        kml.save("kmls_management/static/"+self.kml_name+".kml")
+        kml.save("kmls_management/static/"+self.kml_name)
 
 if __name__ == '__main__':
 

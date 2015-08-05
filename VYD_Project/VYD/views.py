@@ -173,12 +173,13 @@ def make_marker_KML(request):
         print " "
         print " "
         print kml_name
+        print icon_marker
 
         parseManager = ParseManager.getParseManager("")
 
         print parseManager.data
 
-        markerTours = MarkersTour(parseManager.data[0], kml_name, "http://3.bp.blogspot.com/-qu3E7CIu4_E/T40o87HKKDI/AAAAAAAAAz8/b4hKRLCJbNs/s1600/wally.png")
+        markerTours = MarkersTour(parseManager.data[0], kml_name, icon_marker)
 
         markerTours.makeFile()
 
@@ -194,6 +195,7 @@ def make_circle_KML(request):
         kml_name = request.POST.get('kml_name')
         color = request.POST.get('color')
         altitude = int(request.POST.get('altitude'))
+        multiplier = int(request.POST.get('multiplier'))
         parseManager = ParseManager.getParseManager("")
 
         print parseManager.data
@@ -203,10 +205,11 @@ def make_circle_KML(request):
         print kml_name
         print color
         print altitude
+        print multiplier
 
-        circle_Generator = polygon_generator(parseManager.data[0], kml_name, color, altitude)
+        circle_Generator = polygon_generator(parseManager.data[0], kml_name, color, altitude, multiplier)
         circle_Generator.polycicle_generator()
-        kml_file = Kml(name=kml_name, visibility=False)
+        kml_file = Kml(name=kml_name+".kml", visibility=False)
         kml_file.save()
         return HttpResponseRedirect('/VYD/KmlManager/kmls')
 

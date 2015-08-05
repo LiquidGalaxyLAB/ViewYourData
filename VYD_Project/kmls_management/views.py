@@ -32,11 +32,14 @@ def syncKML(request):
     return HttpResponseRedirect('/VYD/KmlManager/kmls')
 
 @csrf_exempt
-def deleteKML(request):
-    id = request.POST['id']
-    kml = Kml.objects.filter(id=id)
-    kml.delete()
-    return HttpResponseRedirect('/VYD/KmlManager/')
+def deleteKML(request,pk):
+    layer = Kml.objects.filter(id=pk)[0]
+    print pk
+    os.system("rm kmls_management/static/"+layer.name+".kml")
+
+    layer.delete()
+
+    return HttpResponseRedirect('/VYD/KmlManager/kmls')
 
 @csrf_exempt
 def kmlManagerView(request):
@@ -61,6 +64,6 @@ def syncKmlsFile():
     file = open("/tmp/kml/kmls.txt",'w')
 
     for i in Kml.objects.filter(visibility=True):
-        file.write("http://"+ str(ip_server)[0:(len(ip_server)-1)]+":8000/static/"+i.name+"\n")
+        file.write("http://"+ str(ip_server)[0:(len(ip_server)-1)]+":8000/static/"+i.name+".kml"+"\n")
 
     file.close()

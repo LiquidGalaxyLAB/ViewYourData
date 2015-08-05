@@ -20,7 +20,7 @@ if __name__ == '__main__':
 
     print data_set
 
-    polygon_manager = polygon_generator(data_set[0], "test_polygon", "green", 5000)
+    polygon_manager = polygon_generator(data_set[0], "test_polygon", "green", 5000,1000)
 
     polygon_manager.polycicle_generator()
 

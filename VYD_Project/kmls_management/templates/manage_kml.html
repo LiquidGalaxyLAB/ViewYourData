@@ -5,16 +5,31 @@
   <div class="collection">
       {% for kml in kmls %}
 
-      <a onclick="syncData({{kml.id}})" class="collection-item">{{kml.name}}
+      {% if kml.visibility  %}
+
+      <a onclick="syncData({{kml.id}})" class="collection-item  teal lighten-1 "><span class="purple-text text-lighten-5">{{kml.name}}</span>
           <span class="badge">
-          <a   class="waves-effect waves-light btn" href="/VYD/KmlManager/deleteKml/{{kml.id}}">
+          <a class="waves-effect waves-light btn" href="/VYD/KmlManager/{{kml.id}}/delete">
               <i class="material-icons left"></i>Delete
           </a>
           </span>
       </a>
 
+      {% else %}
+
+      <a onclick="syncData({{kml.id}})" class="collection-item">{{kml.name}}
+          <span class="badge">
+          <a class="waves-effect waves-light btn" href="/VYD/KmlManager/{{kml.id}}/delete">
+              <i class="material-icons left"></i>Delete
+          </a>
+          </span>
+      </a>
+
+
+      {% endif %}
+
       {% empty %}
-           <li class="list-group-item">No headers something is wrong</li>
+           <li class="list-group-item">No kml something is wrong</li>
       {% endfor %}
   </div>
 
