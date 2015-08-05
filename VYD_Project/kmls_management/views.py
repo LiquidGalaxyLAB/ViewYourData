@@ -7,8 +7,12 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render
 import subprocess
 
+from django.http import HttpResponseRedirect
+from django.shortcuts import render_to_response
+from .forms import UploadFileForm
 
-
+# Imaginary function to handle an uploaded file.
+from somewhere import handle_uploaded_file
 
 
 @csrf_exempt
@@ -67,3 +71,20 @@ def syncKmlsFile():
         file.write("http://"+ str(ip_server)[0:(len(ip_server)-1)]+":8000/static/"+i.name+".kml"+"\n")
 
     file.close()
+
+
+def upload_file(request):
+    if request.method == 'POST':
+        form = UploadFileForm(request.POST, request.FILES)
+        if form.is_valid():
+            handle_uploaded_file(request.FILES['file'])
+            return HttpResponseRedirect('/success/url/')
+    else:
+       form = UploadFileForm()
+       return render_to_response('upload.html', {'form': form})
+
+
+def handle_uploaded_file(f):
+    with open('some/file/name.txt', 'wb+') as destination:
+        for chunk in f.chunks():
+            destination.write(chunk)
