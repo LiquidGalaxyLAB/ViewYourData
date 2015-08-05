@@ -2,6 +2,7 @@
 from django.views.decorators.csrf import csrf_exempt
 import os
 # Create your views here.
+from django.views.generic import FormView
 from models import Kml
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
@@ -11,8 +12,6 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 from .forms import UploadFileForm
 
-# Imaginary function to handle an uploaded file.
-from somewhere import handle_uploaded_file
 
 
 @csrf_exempt
@@ -68,23 +67,17 @@ def syncKmlsFile():
     file = open("/tmp/kml/kmls.txt",'w')
 
     for i in Kml.objects.filter(visibility=True):
-        file.write("http://"+ str(ip_server)[0:(len(ip_server)-1)]+":8000/static/"+i.name+".kml"+"\n")
+        file.write("http://"+ str(ip_server)[0:(len(ip_server)-1)]+":8000/static/"+i.name+"\n")
 
     file.close()
 
 
-def upload_file(request):
-    if request.method == 'POST':
-        form = UploadFileForm(request.POST, request.FILES)
-        if form.is_valid():
-            handle_uploaded_file(request.FILES['file'])
-            return HttpResponseRedirect('/success/url/')
-    else:
-       form = UploadFileForm()
-       return render_to_response('upload.html', {'form': form})
+class FileAddView(FormView):
 
+    form_class = UploadFileForm
+    success_url = "/VYD/KmlManager/kmls"
+    template_name = "import_kml.html"
 
-def handle_uploaded_file(f):
-    with open('some/file/name.txt', 'wb+') as destination:
-        for chunk in f.chunks():
-            destination.write(chunk)
+    def form_valid(self, form):
+        form.save(commit=True)
+        return super(FileAddView, self).form_valid(form)

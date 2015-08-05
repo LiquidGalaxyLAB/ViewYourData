@@ -183,7 +183,8 @@ def make_marker_KML(request):
 
         markerTours.makeFile()
 
-        kml_file = Kml(name=kml_name, visibility=False)
+        kml_file = Kml(name=kml_name+".kml", visibility=False)
+        kml_file.file.name= 'kmls_management/static/'+kml_name+'.kml'
         kml_file.save()
         return HttpResponseRedirect('/VYD/KmlManager/kmls')
     return render(request, 'form_markers.html')
@@ -210,6 +211,7 @@ def make_circle_KML(request):
         circle_Generator = polygon_generator(parseManager.data[0], kml_name, color, altitude, multiplier)
         circle_Generator.polycicle_generator()
         kml_file = Kml(name=kml_name+".kml", visibility=False)
+        kml_file.file.name= 'kmls_management/static/'+kml_name+'.kml'
         kml_file.save()
         return HttpResponseRedirect('/VYD/KmlManager/kmls')
 
