@@ -15,41 +15,55 @@
     <div class="row" >
 
 
-        <div class="col s12 ">
-          <div class="card-panel blue lighten-5">
-              <input name=”type_location” type=”hidden”  value=data>
-
-                    <div class=" center center-align">
-                         <div class="row">
-                             <form method="post" action="/VYD/layers/create/makeKML">
-                                <div class="col s12 m7">
+        <div >
+          <div class="card-panel blue lighten-5 center center-align">
+                    <div class="valign-wrapper center center-align ">
+                         <div class="row ">
+                                <div class="col s8 ">
                                   <div class="card">
                                     <div class="card-image">
                                       <img height="60" width="60" src="http://www.clker.com/cliparts/w/r/B/D/P/5/map-marker-small.svg">
-                                      <span class="card-title">Markers</span>
+                                      <span class="card-title ">Markers</span>
                                     </div>
                                     <div class="card-content">
-                                         <form method="post" action="/VYD/layers/create/makeKml">
-                                      <p>Show your data with personalized markers, set here the url of your marker</p>
-                                        <input name=”icon_marker” type=”hidden”  value=name>
-                                        <input name=”kml_name” type=”hidden”  value=name>
-                                             </form>
+
+                                      <p>Show your data with personalized markers</p>
+
                                     </div>
                                     <div class="card-action">
-                                              <button class="btn waves-effect waves-light right-align" type="submit" name="action">Make it
+                                              <button onclick="location.href='/VYD/layers/create/makeMarker'" class="btn waves-effect waves-light right-align" type="submit" name="action">Make it
                                                     <i class="material-icons">send</i>
                                             </button>
                                     </div>
                                   </div>
                                 </div>
-                              </form>
+                         </div>
+                         <div class="row">
+
+                                <div class="col s12">
+                                  <div class="card">
+                                    <div class="card-image">
+                                      <img height="60" width="60" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgwd0OPzUYK2niPFYI4VrwHfHrTX3vvV2HgSJyzuMsyZHyuIvc">
+                                      <span class="card-title">""</span>
+                                    </div>
+                                    <div class="card-content">
+
+                                      <p>Show your data with personalized circle</p>
+
+                                    </div>
+                                    <div class="card-action">
+                                              <button onclick="location.href='/VYD/layers/create/makeCircle'" class="btn waves-effect waves-light right-align" type="submit" name="action">Make it
+                                                    <i class="material-icons">send</i>
+                                            </button>
+                                    </div>
+                                  </div>
+                                </div>
+
                          </div>
                     </div>
           </div>
 
         </div>
-
-
 
     </div>
 

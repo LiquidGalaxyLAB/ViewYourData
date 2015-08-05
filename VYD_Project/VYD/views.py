@@ -5,6 +5,7 @@ import sys
 from django.views.decorators.csrf import csrf_exempt
 from Utils.PresentationManager.placemark_generator import MarkersTour
 from kmls_management.models import Kml
+from Utils.PresentationManager.polygon_generator import polygon_generator
 
 from .forms import UrlForm
 from Utils.ParseManager.parse_manager import ParseManager
@@ -164,20 +165,51 @@ def presentation_selector(request):
     return render(request, 'presentation_menu.html')
 
 @csrf_exempt
-def make_KML(request):
+def make_marker_KML(request):
 
-    kml_name = request.POST.get('kml_name')
-    icon_marker = request.POST.get('icon_marker')
+    if request.method == 'POST':
+        kml_name = request.POST.get('kml_name')
+        icon_marker = request.POST.get('icon_marker')
+        print " "
+        print " "
+        print kml_name
 
-    parseManager = ParseManager.getParseManager("")
+        parseManager = ParseManager.getParseManager("")
 
-    print parseManager.data
+        print parseManager.data
 
-    markerTours = MarkersTour(parseManager.data[0], "Test", "http://3.bp.blogspot.com/-qu3E7CIu4_E/T40o87HKKDI/AAAAAAAAAz8/b4hKRLCJbNs/s1600/wally.png")
+        markerTours = MarkersTour(parseManager.data[0], kml_name, "http://3.bp.blogspot.com/-qu3E7CIu4_E/T40o87HKKDI/AAAAAAAAAz8/b4hKRLCJbNs/s1600/wally.png")
 
-    markerTours.makeFile()
+        markerTours.makeFile()
 
-    kml_file = Kml(name="Test.kml", visibility=False )
-    kml_file.save()
-    return HttpResponseRedirect('/VYD/KmlManager/kmls')
+        kml_file = Kml(name=kml_name, visibility=False)
+        kml_file.save()
+        return HttpResponseRedirect('/VYD/KmlManager/kmls')
+    return render(request, 'form_markers.html')
 
+@csrf_exempt
+def make_circle_KML(request):
+
+    if request.method == 'POST':
+        kml_name = request.POST.get('kml_name')
+        color = request.POST.get('color')
+        altitude = int(request.POST.get('altitude'))
+        parseManager = ParseManager.getParseManager("")
+
+        print parseManager.data
+        print " "
+        print " "
+
+        print kml_name
+        print color
+        print altitude
+
+        circle_Generator = polygon_generator(parseManager.data[0], kml_name, color, altitude)
+        circle_Generator.polycicle_generator()
+        kml_file = Kml(name=kml_name, visibility=False)
+        kml_file.save()
+        return HttpResponseRedirect('/VYD/KmlManager/kmls')
+
+
+
+    return render(request, 'form_circle.html')

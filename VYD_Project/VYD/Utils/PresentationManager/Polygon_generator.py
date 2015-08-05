@@ -129,7 +129,7 @@ class polygon_generator(object):
             polygon_circle.append(polycircle)
 
 
-        kml.save(self.kml_name+".kml")
+        kml.save("kmls_management/static/"+self.kml_name+".kml")
 
 if __name__ == '__main__':
 

@@ -179,7 +179,7 @@ class MarkersTour(object):
         # check that the KML document is valid using the Google Extension XML Schema
         #assert(Schema("kml22gx.xsd").validate(tour_doc))
 
-        print etree.tostring(tour_doc, pretty_print=True)
+        #print etree.tostring(tour_doc, pretty_print=True)
 
         # output a KML file (named based on the Python script)
         outfile = file("kmls_management/static/"+self.kml_name+'.kml','w')

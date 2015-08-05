@@ -1,0 +1,30 @@
+{% extends "template.html" %}
+{% block content %}
+
+    <nav>
+        <div class="nav-wrapper light-blue darken-4 ">
+
+
+            <div class="brand-logo center">
+                <span class="white-text text-darken-2"><H4 class="center-align ">Select Data and Location</H4></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="kml_name" type="text" class="validate">
+          <label for="kml_name">File Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="icon_marker" type="number" class="validate">
+          <label for="icon_marker">URL Icon Marker</label>
+      </div>
+      </div>
+    </form>
+  </div>
+
+{% endblock content %}
