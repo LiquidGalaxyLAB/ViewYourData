@@ -20,7 +20,7 @@ if __name__ == '__main__':
 
     print data_set
 
-    polygon_manager = polygon_generator(data_set[0], "test_polygon", "green", 5000,0.5)
+    polygon_manager = polygon_generator(data_set[0], "test_polygon", "Green", 5000,0.5,"75")
 
     polygon_manager.dome_generator()
 

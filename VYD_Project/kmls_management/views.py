@@ -56,7 +56,6 @@ def syncKmlsToGalaxy():
     serverPath = "/var/www/html"
     os.system("sshpass -p 'lqgalaxy' scp "+filePath+" lg@172.26.17.21:"+serverPath)
 
-
 def syncKmlsFile():
 
     p = subprocess.Popen("ipconfig getifaddr en0", shell=True, stdout=subprocess.PIPE)

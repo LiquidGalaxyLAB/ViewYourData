@@ -4,18 +4,20 @@ from polycircles import polycircles
 
 class polygon_generator(object):
 
-    def __init__(self, data_set, kml_name, color, altitude, multiplier):
+    def __init__(self, data_set, kml_name, color, altitude, multiplier, opacity = None):
         self.data_set = data_set
         self.kml_name = kml_name
-        self.color = self.set_color(color)
+        self.color = color
         self.altitude = altitude
         self.multiplier = multiplier
+        self.opacity = opacity
 
     def make_polygons_file(self):
         kml = simplekml.Kml()
         pol = kml.newpolygon(name='A Polygon')
         polygon_points = []
         first = None
+        truecolor = self.set_color(self.color)
 
         for data in self.data_set:
             if first == None:
@@ -32,8 +34,8 @@ class polygon_generator(object):
 
         pol.altitudemode = simplekml.AltitudeMode.relativetoground
         pol.extrude = 100
-        pol.style.polystyle.color = simplekml.Color.changealphaint(190, self.color)
-        pol.style.linestyle.color = simplekml.Color.changealphaint(230, self.color)
+        pol.style.polystyle.color = simplekml.Color.changealphaint(190, truecolor)
+        pol.style.linestyle.color = simplekml.Color.changealphaint(230, truecolor)
 
 
 
@@ -103,10 +105,10 @@ class polygon_generator(object):
             print int(data['data'])
 
             location = simplekml.Location(longitude=data['coordinates']['lng'], latitude=data['coordinates']['lat'], altitude=self.altitude)
-            netlink = kml.newnetworklink(name="Network Link")
-            netlink.link.href = "/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae"
+            netlink = kml.newnetworklink(name=self.kml_name)
+            netlink.link.href = self.getFileRoute(self.color, self.opacity)
             netlink.link.viewrefreshmode = simplekml.ViewRefreshMode.onregion
-            sourceurl= "/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae"
+
 
             value =self.multiplier * int(data['data'])
             s_scale = simplekml.Scale(x=value, y=value, z=value)
@@ -114,7 +116,7 @@ class polygon_generator(object):
 
             dome = kml.newmodel(altitudemode= simplekml.AltitudeMode.clamptoground, link=netlink, location=location)
             dome.scale=s_scale
-            dome.placemark.atomlink=sourceurl
+
 
 
         kml.save("/tmp/kml/"+self.kml_name+".kml")
@@ -126,7 +128,21 @@ class polygon_generator(object):
             if not 'NetworkLink' in line:
                 output_file.write(line)
 
+    def getFileRoute(self,color, opacity):
 
+        initalRoute = "/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome/"
+        if color == "Yellow":
+            return initalRoute +"yellow_"+opacity+"_opacity_dome.dae"
+        if color == "Red":
+            return initalRoute +"red_"+opacity+"_opacity_dome.dae"
+        if color == "Green":
+            return initalRoute +"green_"+opacity+"_opacity_dome.dae"
+        if color == "Blue":
+            return initalRoute +"blue_"+opacity+"_opacity_dome.dae"
+
+        print color
+
+        return initalRoute +"yellow_"+opacity+"_opacity_dome.dae"
 
     def polycicle_generator(self):
 
