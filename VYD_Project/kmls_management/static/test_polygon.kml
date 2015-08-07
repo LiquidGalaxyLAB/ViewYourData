@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="feat_1">
+        <open>1</open>
+            <name>Network Link</name>
+            <Link id="link_0">
+                <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_3">
+            <atom:link>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</atom:link>
+            <Model id="geom_0">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-0.560056</longitude>
+                    <latitude>38.285483</latitude>
+                    <altitude>5000</altitude>
+                </Location>
+                <Scale>
+                    <x>0.5</x>
+                    <y>0.5</y>
+                    <z>0.5</z>
+                </Scale>
+                    <name>Network Link</name>
+                    <Link id="link_0">
+                        <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>Network Link</name>
+            <Link id="link_1">
+                <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_5">
+            <atom:link>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</atom:link>
+            <Model id="geom_1">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-2.4637136</longitude>
+                    <latitude>36.834047</latitude>
+                    <altitude>5000</altitude>
+                </Location>
+                <Scale>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </Scale>
+                    <name>Network Link</name>
+                    <Link id="link_1">
+                        <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>Network Link</name>
+            <Link id="link_2">
+                <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_7">
+            <atom:link>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</atom:link>
+            <Model id="geom_2">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-4.6812086</longitude>
+                    <latitude>40.656685</latitude>
+                    <altitude>5000</altitude>
+                </Location>
+                <Scale>
+                    <x>0.5</x>
+                    <y>0.5</y>
+                    <z>0.5</z>
+                </Scale>
+                    <name>Network Link</name>
+                    <Link id="link_2">
+                        <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>Network Link</name>
+            <Link id="link_3">
+                <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_9">
+            <atom:link>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</atom:link>
+            <Model id="geom_3">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>2.1734035</longitude>
+                    <latitude>41.3850639</latitude>
+                    <altitude>5000</altitude>
+                </Location>
+                <Scale>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </Scale>
+                    <name>Network Link</name>
+                    <Link id="link_3">
+                        <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>Network Link</name>
+            <Link id="link_4">
+                <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_11">
+            <atom:link>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</atom:link>
+            <Model id="geom_4">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>2.1734035</longitude>
+                    <latitude>41.3850639</latitude>
+                    <altitude>5000</altitude>
+                </Location>
+                <Scale>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </Scale>
+                    <name>Network Link</name>
+                    <Link id="link_4">
+                        <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>Network Link</name>
+            <Link id="link_5">
+                <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_13">
+            <atom:link>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</atom:link>
+            <Model id="geom_5">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-5.7642172</longitude>
+                    <latitude>40.3871165</latitude>
+                    <altitude>5000</altitude>
+                </Location>
+                <Scale>
+                    <x>2.0</x>
+                    <y>2.0</y>
+                    <z>2.0</z>
+                </Scale>
+                    <name>Network Link</name>
+                    <Link id="link_5">
+                        <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>Network Link</name>
+            <Link id="link_6">
+                <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_15">
+            <atom:link>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</atom:link>
+            <Model id="geom_6">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-2.9349852</longitude>
+                    <latitude>43.2630126</latitude>
+                    <altitude>5000</altitude>
+                </Location>
+                <Scale>
+                    <x>0.5</x>
+                    <y>0.5</y>
+                    <z>0.5</z>
+                </Scale>
+                    <name>Network Link</name>
+                    <Link id="link_6">
+                        <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>Network Link</name>
+            <Link id="link_7">
+                <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_17">
+            <atom:link>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</atom:link>
+            <Model id="geom_7">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-3.696906</longitude>
+                    <latitude>42.3439925</latitude>
+                    <altitude>5000</altitude>
+                </Location>
+                <Scale>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </Scale>
+                    <name>Network Link</name>
+                    <Link id="link_7">
+                        <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>Network Link</name>
+            <Link id="link_8">
+                <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_19">
+            <atom:link>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</atom:link>
+            <Model id="geom_8">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-6.3724247</longitude>
+                    <latitude>39.4752765</latitude>
+                    <altitude>5000</altitude>
+                </Location>
+                <Scale>
+                    <x>25.0</x>
+                    <y>25.0</y>
+                    <z>25.0</z>
+                </Scale>
+                    <name>Network Link</name>
+                    <Link id="link_8">
+                        <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>Network Link</name>
+            <Link id="link_9">
+                <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_21">
+            <atom:link>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</atom:link>
+            <Model id="geom_9">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-0.9965839</longitude>
+                    <latitude>37.6256827</latitude>
+                    <altitude>5000</altitude>
+                </Location>
+                <Scale>
+                    <x>0.5</x>
+                    <y>0.5</y>
+                    <z>0.5</z>
+                </Scale>
+                    <name>Network Link</name>
+                    <Link id="link_9">
+                        <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>Network Link</name>
+            <Link id="link_10">
+                <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_23">
+            <atom:link>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</atom:link>
+            <Model id="geom_10">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-0.0513246</longitude>
+                    <latitude>39.9863563</latitude>
+                    <altitude>5000</altitude>
+                </Location>
+                <Scale>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </Scale>
+                    <name>Network Link</name>
+                    <Link id="link_10">
+                        <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>Network Link</name>
+            <Link id="link_11">
+                <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_25">
+            <atom:link>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</atom:link>
+            <Model id="geom_11">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-3.9273778</longitude>
+                    <latitude>38.9848295</latitude>
+                    <altitude>5000</altitude>
+                </Location>
+                <Scale>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </Scale>
+                    <name>Network Link</name>
+                    <Link id="link_11">
+                        <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>Network Link</name>
+            <Link id="link_12">
+                <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_27">
+            <atom:link>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</atom:link>
+            <Model id="geom_12">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-3.7771832</longitude>
+                    <latitude>37.7948981</latitude>
+                    <altitude>5000</altitude>
+                </Location>
+                <Scale>
+                    <x>5.0</x>
+                    <y>5.0</y>
+                    <z>5.0</z>
+                </Scale>
+                    <name>Network Link</name>
+                    <Link id="link_12">
+                        <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>Network Link</name>
+            <Link id="link_13">
+                <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_29">
+            <atom:link>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</atom:link>
+            <Model id="geom_13">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-0.5235474</longitude>
+                    <latitude>38.9899566</latitude>
+                    <altitude>5000</altitude>
+                </Location>
+                <Scale>
+                    <x>0.5</x>
+                    <y>0.5</y>
+                    <z>0.5</z>
+                </Scale>
+                    <name>Network Link</name>
+                    <Link id="link_13">
+                        <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>Network Link</name>
+            <Link id="link_14">
+                <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_31">
+            <atom:link>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</atom:link>
+            <Model id="geom_14">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-5.5670959</longitude>
+                    <latitude>42.5987263</latitude>
+                    <altitude>5000</altitude>
+                </Location>
+                <Scale>
+                    <x>0.5</x>
+                    <y>0.5</y>
+                    <z>0.5</z>
+                </Scale>
+                    <name>Network Link</name>
+                    <Link id="link_14">
+                        <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>Network Link</name>
+            <Link id="link_15">
+                <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_33">
+            <atom:link>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</atom:link>
+            <Model id="geom_15">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>0.6200146</longitude>
+                    <latitude>41.6175899</latitude>
+                    <altitude>5000</altitude>
+                </Location>
+                <Scale>
+                    <x>2.0</x>
+                    <y>2.0</y>
+                    <z>2.0</z>
+                </Scale>
+                    <name>Network Link</name>
+                    <Link id="link_15">
+                        <href>/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+    </Document>
+</kml>

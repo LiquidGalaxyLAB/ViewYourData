@@ -91,6 +91,43 @@ class polygon_generator(object):
 
         kml.save(""+self.kml_name+".kml")
 
+    def dome_generator(self):
+        kml = simplekml.Kml(open=1)
+
+        polygon_circle =[]
+
+        for data in self.data_set:
+
+            #shape_domes = kml.newmultigeometry(name=data['data'])
+
+            print int(data['data'])
+
+            location = simplekml.Location(longitude=data['coordinates']['lng'], latitude=data['coordinates']['lat'], altitude=self.altitude)
+            netlink = kml.newnetworklink(name="Network Link")
+            netlink.link.href = "/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae"
+            netlink.link.viewrefreshmode = simplekml.ViewRefreshMode.onregion
+            sourceurl= "/Users/Marc/PycharmProjects/ViewYourData/VYD_Project/kmls_management/static/dome.dae"
+
+            value =self.multiplier * int(data['data'])
+            s_scale = simplekml.Scale(x=value, y=value, z=value)
+
+
+            dome = kml.newmodel(altitudemode= simplekml.AltitudeMode.clamptoground, link=netlink, location=location)
+            dome.scale=s_scale
+            dome.placemark.atomlink=sourceurl
+
+
+        kml.save("/tmp/kml/"+self.kml_name+".kml")
+        input_file = open("/tmp/kml/"+self.kml_name+".kml","r")
+        output_file = open("kmls_management/static/"+self.kml_name+".kml","w")
+
+
+        for line in input_file:
+            if not 'NetworkLink' in line:
+                output_file.write(line)
+
+
+
     def polycicle_generator(self):
 
         kml = simplekml.Kml(open=1)
