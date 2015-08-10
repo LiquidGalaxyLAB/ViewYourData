@@ -1,8 +1,9 @@
 __author__ = 'Marc'
 
 from models import Kml
-from django import forms
+from django.forms import ModelForm
 
-class UploadFileForm(forms.Form):
+class UploadFileForm(ModelForm):
     class Meta:
         model = Kml
+        fields = "__all__"

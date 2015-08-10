@@ -218,3 +218,35 @@ def make_circle_KML(request):
 
 
     return render(request, 'form_circle.html')
+
+
+@csrf_exempt
+def make_dome_KML(request):
+
+    if request.method == 'POST':
+        kml_name = request.POST.get('kml_name')
+        color = request.POST.get('color')
+        altitude = int(request.POST.get('altitude'))
+        multiplier = float(request.POST.get('multiplier'))
+        opacity = int(request.POST.get('opacity'))
+        parseManager = ParseManager.getParseManager("")
+
+        print parseManager.data
+        print " "
+        print " "
+
+        print kml_name
+        print color
+        print altitude
+        print multiplier
+
+        dome_Generator = polygon_generator(parseManager.data[0], kml_name, color, altitude, multiplier, opacity)
+        dome_Generator.dome_generator()
+        kml_file = Kml(name=kml_name+".kml", visibility=False)
+        kml_file.file.name= 'kmls_management/static/'+kml_name+'.kml'
+        kml_file.save()
+        return HttpResponseRedirect('/VYD/KmlManager/kmls')
+
+
+
+    return render(request, 'form_dome.html')

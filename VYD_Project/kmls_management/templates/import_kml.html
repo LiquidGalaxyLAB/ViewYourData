@@ -1,12 +1,18 @@
 {% extends "template_manage.html" %}
 {% block content %}
 
+<div class="card-panel blue lighten-3">
 
-<form action="/add" method="post" enctype="multipart/form-data">
+
+<form class="col s12" action="/VYD/KmlManager/importKML" method="post" enctype="multipart/form-data">
 <input name="f" type="file" id="file" />
-<input type="submit" id="submit" value="Submit File" />
+    <div class="row">
+         <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons">send</i>
+          </button>
+    </div>
 {% csrf_token %}
 </form>
 
-
+</div>
 {% endblock content %}

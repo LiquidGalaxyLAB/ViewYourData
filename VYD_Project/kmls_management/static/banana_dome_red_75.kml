@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+    <Document id="feat_1">
+        <open>1</open>
+            <name>banana_dome_red_75</name>
+            <Link id="link_0">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_3">
+            <Model id="geom_0">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-0.4906855</longitude>
+                    <latitude>38.3459963</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>0.4</x>
+                    <y>0.4</y>
+                    <z>0.4</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_0">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_1">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_5">
+            <Model id="geom_1">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-2.4637136</longitude>
+                    <latitude>36.834047</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>3.6</x>
+                    <y>3.6</y>
+                    <z>3.6</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_1">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_2">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_7">
+            <Model id="geom_2">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-4.6812086</longitude>
+                    <latitude>40.656685</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_2">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_3">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_9">
+            <Model id="geom_3">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>2.1734035</longitude>
+                    <latitude>41.3850639</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>0.4</x>
+                    <y>0.4</y>
+                    <z>0.4</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_3">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_4">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_11">
+            <Model id="geom_4">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>2.1734035</longitude>
+                    <latitude>41.3850639</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_4">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_5">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_13">
+            <Model id="geom_5">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-5.7642172</longitude>
+                    <latitude>40.3871165</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>0.4</x>
+                    <y>0.4</y>
+                    <z>0.4</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_5">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_6">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_15">
+            <Model id="geom_6">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-2.9349852</longitude>
+                    <latitude>43.2630126</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_6">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_7">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_17">
+            <Model id="geom_7">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-3.696906</longitude>
+                    <latitude>42.3439925</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_7">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_8">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_19">
+            <Model id="geom_8">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-6.3724247</longitude>
+                    <latitude>39.4752765</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>31.6</x>
+                    <y>31.6</y>
+                    <z>31.6</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_8">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_9">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_21">
+            <Model id="geom_9">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-0.9965839</longitude>
+                    <latitude>37.6256827</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>0.8</x>
+                    <y>0.8</y>
+                    <z>0.8</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_9">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_10">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_23">
+            <Model id="geom_10">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-0.0513246</longitude>
+                    <latitude>39.9863563</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>0.4</x>
+                    <y>0.4</y>
+                    <z>0.4</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_10">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_11">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_25">
+            <Model id="geom_11">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-5.6635397</longitude>
+                    <latitude>40.9701039</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_11">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_12">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_27">
+            <Model id="geom_12">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-1.9812313</longitude>
+                    <latitude>43.318334</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_12">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_13">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_29">
+            <Model id="geom_13">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-3.8099803</longitude>
+                    <latitude>43.4623057</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_13">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_14">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_31">
+            <Model id="geom_14">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-4.1088069</longitude>
+                    <latitude>40.9429032</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_14">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_15">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_33">
+            <Model id="geom_15">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-5.9867172</longitude>
+                    <latitude>37.4061358</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>3.6</x>
+                    <y>3.6</y>
+                    <z>3.6</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_15">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_16">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_35">
+            <Model id="geom_16">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-5.9002883</longitude>
+                    <latitude>37.298717</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>3.6</x>
+                    <y>3.6</y>
+                    <z>3.6</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_16">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_17">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_37">
+            <Model id="geom_17">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-2.4790306</longitude>
+                    <latitude>41.7665972</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_17">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_18">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_39">
+            <Model id="geom_18">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>1.2444909</longitude>
+                    <latitude>41.1188827</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>0.4</x>
+                    <y>0.4</y>
+                    <z>0.4</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_18">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_19">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_41">
+            <Model id="geom_19">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-1.1064345</longitude>
+                    <latitude>40.3456879</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_19">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+            <name>banana_dome_red_75</name>
+            <Link id="link_20">
+                <href>/dome/red_75_opacity_dome.dae</href>
+                <viewRefreshMode>onRegion</viewRefreshMode>
+            </Link>
+        <Placemark id="feat_43">
+            <Model id="geom_20">
+                <altitudeMode>clampToGround</altitudeMode>
+                <Location>
+                    <longitude>-83.555212</longitude>
+                    <latitude>41.6639383</latitude>
+                    <altitude>0</altitude>
+                </Location>
+                <Scale>
+                    <x>0.0</x>
+                    <y>0.0</y>
+                    <z>0.0</z>
+                </Scale>
+                    <name>banana_dome_red_75</name>
+                    <Link id="link_20">
+                        <href>/dome/red_75_opacity_dome.dae</href>
+                        <viewRefreshMode>onRegion</viewRefreshMode>
+                    </Link>
+            </Model>
+        </Placemark>
+    </Document>
+</kml>

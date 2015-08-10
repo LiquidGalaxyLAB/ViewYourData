@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^layers/create/presentationMenu', views.presentation_selector),
     url(r'^layers/create/makeCircle', views.make_circle_KML),
     url(r'^layers/create/makeMarker', views.make_marker_KML),
+    url(r'^layers/create/makeDome', views.make_dome_KML),
 
 
 

@@ -20,9 +20,9 @@ if __name__ == '__main__':
 
     print data_set
 
-    polygon_manager = polygon_generator(data_set[0], "test_polygon", "Green", 5000,0.5,"75")
+    polygon_manager = polygon_generator(data_set[0], "test_polygon", "Red", 8000,5000,"75")
 
-    polygon_manager.dome_generator()
+    polygon_manager.cylinder_generator()
 
 
     #markersTour = MarkersTour(data_set[0], "test", "https://www.sideshowtoy.com/wp-content/uploads/2013/06/1000761-product-silob.png")
