@@ -1,4 +1,0 @@
-chardet==2.3.0
-Django==1.8.2
-requests==2.7.0
-wget==2.2

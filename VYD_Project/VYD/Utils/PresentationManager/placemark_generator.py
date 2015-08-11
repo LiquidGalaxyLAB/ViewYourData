@@ -77,6 +77,7 @@ class MarkersTour(object):
                   KML.altitude(0),
                   KML.heading(0),
                   KML.tilt(data['data']),
+                  KML.name(data['data']),
                   KML.range(self.range),
                   KML.altitudeMode("relativeToGround"),
                 )
@@ -94,6 +95,7 @@ class MarkersTour(object):
                       KML.altitude(0),
                       KML.heading(aspect),
                       KML.tilt(data['data']),
+                      KML.name(data['data']),
                       KML.range(self.range),
                       KML.altitudeMode("relativeToGround"),
                     )
