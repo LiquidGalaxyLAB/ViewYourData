@@ -11,73 +11,127 @@
         </div>
     </nav>
 
+    <form id="form1" method="post" action="/VYD/layers/create/selectData">
+        <input style="visibility: hidden;" type=”hidden” name=”type_location”  value=name>
+    </form>
 
-    <div class="row" >
 
-        <form method="post" action="/VYD/layers/create/selectData">
-            <input name=”type_location” type=”hidden”  value=coor>
+    <div class="row">
+        <div class="col s12 ">
+            <div class="card  white ">
+                <div class="card-content white-text">
 
-        <div class="col s6 "><p>
-          <div class="card-panel blue lighten-5">
+                    <div class="row">
 
-            <div class=" center center-align">
-                    <div class="section">
-                            <h5>Select Latitude</h5>
-                            <p>Select Latitude for localize the data</p>
-                          </div>
-                <div class="divider"></div>
-            <span class="white-text">
-                  {% for header in request.session.headers %}
-                    <p>
-                      <input name="location_lat" type="checkbox" id="lat_{{ forloop.counter }}"  value="{{ forloop.counter }}"/>
-                      <label for="lat_{{ forloop.counter }}">{{header}}</label>
-                    </p>
-                  {% empty %}
-                    <li class="list-group-item">No headers something is wrong</li>
-                  {% endfor %}
-            </span>
+                        <span class="card-title"><span class=" teal-text text-darken-3">Select the Coordinates </span></span>
+
+                        <p>
+                            <span class=" teal-text text-darken-3">Select the camp where can find the latitude and the longitude</span>
+                        </p>
+
+                    </div>
+
+                    <div class="row right-align">
+                        <button form="form1" class="btn waves-effect waves-light" value="Submit" type="submit" >Submit
+                            <i class="mdi-content-send right"></i>
+                        </button>
+                    </div>
+
+                </div>
+
             </div>
-
         </div>
-            </div>
-
-        <div class="col s6 "><p>
-          <div class="card-panel blue lighten-5">
-
-            <div class=" center center-align">
-                    <div class="section">
-                            <h5>Select Longitude</h5>
-                            <p>Select Longitude for localize the data</p>
-                          </div>
-                <div class="divider"></div>
-            <span class="white-text">
-                  {% for header in request.session.headers %}
-                    <p>
-                      <input name="location_lng" type="checkbox" id="lon_{{ forloop.counter }}" value="{{ forloop.counter }}" />
-                      <label for="lon_{{ forloop.counter }}">{{header}}</label>
-                    </p>
-                  {% empty %}
-                    <li class="list-group-item">No headers something is wrong</li>
-                  {% endfor %}
-            </span>
-            </div>
-
-        </div>
-
-        </div>
-<button class="btn waves-effect waves-light right-align" type="submit" name="action">Submit
-    <i class="material-icons">send</i>
-  </button>
-
-        </form>
     </div>
 
+    <div class="row">
+        <div class="col s12 ">
+            <div class="card  white ">
+                <div class="card-content white-text">
 
+                    <span class="card-title"><span class=" teal-text text-darken-3">Select the Latitude </span></span>
 
+                    <p> <span class=" teal-text text-darken-3">Select the Latitude camp</span></p>
+                    <div class="divider"></div>
+                    <div class="row" style="padding-top:30px">
+                        <div class="col s12 grid-example ">
+                            <span class="flow-text">
+                                <div class="row" >
+                                      {% for header in request.session.headers %}
+                                        <div class="row" style="padding-left:30px" >
+                                          <input form="form1"  name="location_lat" type="checkbox" id="lat_{{ forloop.counter }}"  value="{{ forloop.counter }}"/>
+                                          <label for="lat_{{ forloop.counter }}">{{header}}</label>
+                                        </div>
+                                  {% empty %}
+                                    <li class="list-group-item">No headers something is wrong (maybe the parse or the type of the format of the file)</li>
+                                  {% endfor %}
+                                </div>
 
+                             </span>
+                        </div>
 
+                    </div>
 
+                </div>
 
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 ">
+            <div class="card  white ">
+                <div class="card-content white-text">
+
+                    <span class="card-title"><span class=" teal-text text-darken-3">Select the Longitude </span></span>
+
+                    <p> <span class=" teal-text text-darken-3">Select the Longitude camp</span></p>
+                    <div class="divider"></div>
+                    <div class="row" style="padding-top:30px">
+                        <div class="col s12 grid-example ">
+                            <span class="flow-text">
+                                <div class="row" >
+                                      {% for header in request.session.headers %}
+                                        <div class="row" style="padding-left:30px" >
+                                          <input form="form1"  name="location_lng" type="checkbox" id="lon_{{ forloop.counter }}" value="{{ forloop.counter }}" />
+                                          <label for="lon_{{ forloop.counter }}">{{header}}</label>
+                                        </div>
+                                  {% empty %}
+                                    <li class="list-group-item">No headers something is wrong (maybe the parse or the type of the format of the file)</li>
+                                  {% endfor %}
+                                </div>
+
+                             </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 ">
+            <div class="card  white ">
+                <div class="card-content white-text">
+                    <div class="row" style="padding-top:30px">
+                        <div class="col s12 grid-example ">
+                            <span class="flow-text">
+                                <div class="row center-align">
+                                    <button form="form1" class="btn waves-effect waves-light" value="Submit" type="submit" >Submit
+                                        <i class="mdi-content-send right"></i>
+                                    </button>
+                                </div>
+                             </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 
 {% endblock content %}
