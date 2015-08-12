@@ -2,28 +2,45 @@
 {% block content %}
 
 
-  <div class="collection">
+  <ul class="collection">
       {% for kml in kmls %}
 
       {% if kml.visibility  %}
+      <li class="collection-item">
+          <div class="row">
+              <div class="col s2">
+                <a class="btn-floating btn-large waves-effect waves-light red"  href="/VYD/KmlManager/{{kml.id}}/delete" ><i class="material-icons">delete</i></a>
+              </div>
+              <div class="col s2">
+                <a class="btn-floating btn-large waves-effect waves-light teal lighten-1"  onclick="syncData({{kml.id}})" ><i class="material-icons">visibility</i></a>
+              </div>
+              <div class="col s8 ">
+                  <div class="valign-wrapper">
+                      <h5 class="valign"><span class="teal-text text-darken-1">{{kml}}</span></h5>
+                  </div>
 
-      <a onclick="syncData({{kml.id}})" class="collection-item  teal lighten-1 "><span class="purple-text text-lighten-5">{{kml.name}}</span>
-          <span class="badge">
-          <a class="waves-effect waves-light btn" href="/VYD/KmlManager/{{kml.id}}/delete">
-              <i class="material-icons left"></i>Delete
-          </a>
-          </span>
-      </a>
+              </div>
+          </div>
+      </li>
 
       {% else %}
 
-      <a onclick="syncData({{kml.id}})" class="collection-item">{{kml.name}}
-          <span class="badge">
-          <a class="waves-effect waves-light btn" href="/VYD/KmlManager/{{kml.id}}/delete">
-              <i class="material-icons left"></i>Delete
-          </a>
-          </span>
-      </a>
+      <li class="collection-item">
+          <div class="row">
+              <div class="col s2">
+                <a class="btn-floating btn-large waves-effect waves-light red"  href="/VYD/KmlManager/{{kml.id}}/delete" ><i class="material-icons">delete</i></a>
+              </div>
+              <div class="col s2">
+                <a class="btn-floating btn-large waves-effect waves-light red"  onclick="syncData({{kml.id}})" ><i class="material-icons">visibility</i></a>
+              </div>
+              <div class="col s8 ">
+                  <div class="valign-wrapper">
+                      <h5 class="valign"><span class="teal-text text-darken-1">{{kml}}</span></h5>
+                  </div>
+
+              </div>
+          </div>
+      </li>
 
 
       {% endif %}
@@ -31,16 +48,16 @@
       {% empty %}
            <li class="list-group-item">No kml something is wrong</li>
       {% endfor %}
-  </div>
+  </ul>
 
 
   <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
     <a class="btn-floating btn-large red">
-      <i class="large material-icons">settings</i>
+      <i class="large material-icons">add</i>
     </a>
     <ul>
       <li><a class="btn-floating blue" href="/VYD/KmlManager/importKML"  ><i class="material-icons">attach_file</i></a></li>
-      <li><a class="btn-floating red"  href="/VYD/layers/create/submitUrl"><i class="material-icons">library_add</i></i></a></li>
+      <li><a class="btn-floating red"  href="/VYD/layers/create/submitUrl"><i class="material-icons">add</i></i></a></li>
     </ul>
   </div>
 

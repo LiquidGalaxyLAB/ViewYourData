@@ -1,7 +1,6 @@
 __author__ = 'Marc'
 
 from django.conf.urls import include, url
-from django.contrib import admin
 from VYD import views
 from django.conf import settings
 from django.conf.urls.static import static
@@ -23,8 +22,6 @@ urlpatterns = [
     url(r'^layers/create/makeCircle', views.make_circle_KML),
     url(r'^layers/create/makeMarker', views.make_marker_KML),
     url(r'^layers/create/makeDome', views.make_dome_KML),
-
-
-
+    url(r'^layers/create/makeCylinder', views.make_cylinder_KML),
 
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

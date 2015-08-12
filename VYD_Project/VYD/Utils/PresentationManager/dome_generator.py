@@ -38,7 +38,7 @@ class DomeGenerator(object):
 
         kml.save("/tmp/kml/"+self.kml_name+".kml")
         input_file = open("/tmp/kml/"+self.kml_name+".kml","r")
-        output_file = open("kmls_management/static/"+self.kml_name+".kml","w")
+        output_file = open("kmls_management/static/"+self.kml_name,"w")
 
 
         for line in input_file:

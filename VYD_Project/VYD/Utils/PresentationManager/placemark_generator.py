@@ -184,5 +184,5 @@ class MarkersTour(object):
         #print etree.tostring(tour_doc, pretty_print=True)
 
         # output a KML file (named based on the Python script)
-        outfile = file("kmls_management/static/"+self.kml_name+'.kml','w')
+        outfile = file("kmls_management/static/"+self.kml_name,'w')
         outfile.write(etree.tostring(tour_doc, pretty_print=True))

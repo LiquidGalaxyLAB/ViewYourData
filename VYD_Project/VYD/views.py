@@ -5,7 +5,9 @@ import sys
 from django.views.decorators.csrf import csrf_exempt
 from Utils.PresentationManager.placemark_generator import MarkersTour
 from kmls_management.models import Kml
-from Utils.PresentationManager.polygon_generator import polygon_generator
+from Utils.PresentationManager.dome_generator import DomeGenerator
+from Utils.PresentationManager.circle_generator import CircleGenerator
+from Utils.PresentationManager.cylinder_generator import CylinderGenerator
 
 from .forms import UrlForm
 from Utils.ParseManager.parse_manager import ParseManager
@@ -183,10 +185,12 @@ def make_marker_KML(request):
 
         markerTours.makeFile()
 
-        kml_file = Kml(name=kml_name+".kml", visibility=False)
-        kml_file.file.name= 'kmls_management/static/'+kml_name+'.kml'
+        kml_file = Kml(visibility=False)
+        kml_file.file.name= 'kmls_management/static/'+kml_name
         kml_file.save()
+        request.session.clear()
         return HttpResponseRedirect('/VYD/KmlManager/kmls')
+
     return render(request, 'form_markers.html')
 
 @csrf_exempt
@@ -208,11 +212,14 @@ def make_circle_KML(request):
         print altitude
         print multiplier
 
-        circle_Generator = polygon_generator(parseManager.data[0], kml_name, color, altitude, multiplier)
-        circle_Generator.polycicle_generator()
-        kml_file = Kml(name=kml_name+".kml", visibility=False)
-        kml_file.file.name= 'kmls_management/static/'+kml_name+'.kml'
+        circle_Generator = CircleGenerator(parseManager.data[0], kml_name, color, altitude, multiplier)
+        circle_Generator.generate()
+        kml_file = Kml(visibility=False)
+        kml_file.file.name= 'kmls_management/static/'+kml_name
         kml_file.save()
+
+        request.session.clear()
+
         return HttpResponseRedirect('/VYD/KmlManager/kmls')
 
 
@@ -240,13 +247,50 @@ def make_dome_KML(request):
         print altitude
         print multiplier
 
-        dome_Generator = polygon_generator(parseManager.data[0], kml_name, color, altitude, multiplier, opacity)
-        dome_Generator.dome_generator()
-        kml_file = Kml(name=kml_name+".kml", visibility=False)
-        kml_file.file.name= 'kmls_management/static/'+kml_name+'.kml'
+        dome_Generator = DomeGenerator(parseManager.data[0], kml_name, color, altitude, multiplier, opacity)
+        dome_Generator.generate()
+        kml_file = Kml(visibility=False)
+        kml_file.file.name= 'kmls_management/static/'+kml_name
         kml_file.save()
+
+        request.session.clear()
+
         return HttpResponseRedirect('/VYD/KmlManager/kmls')
 
 
 
     return render(request, 'form_dome.html')
+
+@csrf_exempt
+def make_cylinder_KML(request):
+
+    if request.method == 'POST':
+        kml_name = request.POST.get('kml_name')
+        color = request.POST.get('color')
+        altitude = int(request.POST.get('altitude'))
+        multiplier = float(request.POST.get('multiplier'))
+        radius = int(request.POST.get('radius'))
+        parseManager = ParseManager.getParseManager("")
+
+        print parseManager.data
+        print " "
+        print " "
+
+        print kml_name
+        print color
+        print altitude
+        print multiplier
+
+        dome_Generator = CylinderGenerator(parseManager.data[0], kml_name, color, altitude, multiplier, radius)
+        dome_Generator.generate()
+        kml_file = Kml(visibility=False)
+        kml_file.file.name= 'kmls_management/static/'+kml_name
+        kml_file.save()
+
+        request.session.clear()
+
+        return HttpResponseRedirect('/VYD/KmlManager/kmls')
+
+
+
+    return render(request, 'form_cylinder.html')

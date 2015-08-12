@@ -90,7 +90,7 @@ class CylinderGenerator(object):
                 polygon_circle.append(polycircle)
 
 
-        kml.save("kmls_management/static/"+self.kml_name+".kml")
+        kml.save("kmls_management/static/"+self.kml_name)
 
     def set_color(self, color):
         if color == "Yellow":

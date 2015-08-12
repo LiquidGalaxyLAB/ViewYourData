@@ -21,6 +21,6 @@ urlpatterns = [
     url(r'^showKMLOrHide', views.syncKML),
     url(r'^(?P<pk>\d+)/delete', views.deleteKML),
     url(r'^syncKmls', views.syncKmlsToGalaxy),
-    url(r'^importKML', views.FileAddView.as_view()),
+    url(r'^importKML', views.import_kml),
 
 ]

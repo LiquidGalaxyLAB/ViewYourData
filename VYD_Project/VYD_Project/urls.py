@@ -15,10 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-
+from django.views.generic.base import RedirectView
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^VYD/', include('VYD.urls')),
     url(r'^VYD/KmlManager/', include('kmls_management.urls')),
+    url(r'^$', RedirectView.as_view(url='/VYD/KmlManager/kmls', permanent=False), name='index')
 
 ]
