@@ -16,16 +16,18 @@ from forms import UploadKMLForm
 def syncKML(request):
 
     id = request.POST['id']
-    print "HEY"+str(id)
-    kml = Kml.objects.filter(id=id)[0]
-    print kml
-    print "Hola"
-    if kml.get_visivility():
-        kml.visibility = False
-        kml.save()
-    else:
-        kml.visibility = True
-        kml.save()
+
+    if id != "-1":
+        print "HEY"+str(id)
+        kml = Kml.objects.filter(id=id)[0]
+        print kml
+        print "Hola"
+        if kml.get_visivility():
+            kml.visibility = False
+            kml.save()
+        else:
+            kml.visibility = True
+            kml.save()
 
     syncKmlsFile()
     syncKmlsToGalaxy()
