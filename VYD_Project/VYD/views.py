@@ -36,7 +36,7 @@ def submit_url(request):
     else:
         form = UrlForm()
 
-    return render(request, 'create_download_url_submit.html', {'form': form})
+    return render(request, 'parser_download_url_submit.html', {'form': form})
 
 def download_page(request):
     # if this is a POST request we need to process the form data
@@ -66,7 +66,7 @@ def download_file(request):
 
 
 def file_info_view(request):
-    return render(request, 'create_download_file_type.html')
+    return render(request, 'parser_download_file_type.html')
 
 @csrf_exempt
 def select_data_of_header(request):
@@ -111,9 +111,9 @@ def redirect_for_type_location(request):
 
     typelocation = request.POST['type_location']
     if typelocation == "1":
-        return render(request, 'create_selector_data_location_name.html')
+        return render(request, 'parser_selector_location_name.html')
     elif typelocation == "2":
-        return render(request, 'location_coordinates_selector.html')
+        return render(request, 'parser_selector_location_coordinates.html')
 
 
 @csrf_exempt
