@@ -3,6 +3,7 @@ from PresentationManager.placemark_generator import MarkersTour
 from PresentationManager.polygon_generator import polygon_generator
 from PresentationManager.cylinder_generator import CylinderGenerator
 from PresentationManager.circle_generator import CircleGenerator
+from PresentationManager.dome_generator import DomeGenerator
 
 __author__ = 'Marc'
 
@@ -53,6 +54,16 @@ if __name__ == '__main__':
     marker_generator.makeFile()
 
     """
+
+
+    """
+    Test dome
+    """
+
+    dome_generator = DomeGenerator(data_set[0], "test_polygon_dome", "Red", 100,0.5, 75)
+    dome_generator.generate()
+
+
 
     #markersTour = MarkersTour(data_set[0], "test", "https://www.sideshowtoy.com/wp-content/uploads/2013/06/1000761-product-silob.png")
     #markersTour.makeFile()
