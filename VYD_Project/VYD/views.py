@@ -35,13 +35,13 @@ def submit_url(request):
     else:
         form = UrlForm()
 
-    return render(request, 'parser_download_url_submit.html', {'form': form})
+    return render(request, 'parser/parser_download_url_submit.html', {'form': form})
 
 
 def download_page(request):
     # if this is a POST request we need to process the form data
 
-    return render(request, 'loading_page.html')
+    return render(request, 'loading/loading_page.html')
 
 
 @csrf_exempt
@@ -67,7 +67,7 @@ def download_file(request):
 
 
 def file_info_view(request):
-    return render(request, 'parser_download_file_type.html')
+    return render(request, 'parser/parser_download_file_type.html')
 
 
 @csrf_exempt
@@ -96,7 +96,7 @@ def select_data_of_header(request):
 
     if data_loc == None:
         parseManager.type_loc = type_location
-        return render(request, 'parser_selector_data.html')
+        return render(request, 'parser/parser_selector_data.html')
     else:
         parseManager.data_loc = int(data_loc) - 1
         print "Data loc: " + str(parseManager.data_loc)
@@ -110,14 +110,14 @@ def redirect_for_type_location(request):
 
     typelocation = request.POST['type_location']
     if typelocation == "1":
-        return render(request, 'parser_selector_location_name.html')
+        return render(request, 'parser/parser_selector_location_name.html')
     elif typelocation == "2":
-        return render(request, 'parser_selector_location_coordinates.html')
+        return render(request, 'parser/parser_selector_location_coordinates.html')
 
 
 @csrf_exempt
 def load_parse_data(request):
-    return render(request, 'load_parse_data.html')
+    return render(request, 'loading/loading_parse_data.html')
 
 
 @csrf_exempt
@@ -153,7 +153,7 @@ def view_data_and_location_selected(request):
     # print parseManager.data
 
 
-    return render(request, 'view_data_location_selected.html', {'data_set': parseManager.data[0]})
+    return render(request, 'parser/parser_result_data.html', {'data_set': parseManager.data[0]})
 
 
 @csrf_exempt
@@ -163,7 +163,7 @@ def error_page(request):
 
 @csrf_exempt
 def presentation_selector(request):
-    return render(request, 'presentation_menu.html')
+    return render(request, 'presentation/presentation_menu.html')
 
 
 @csrf_exempt
@@ -190,7 +190,7 @@ def make_marker_KML(request):
         request.session.clear()
         return HttpResponseRedirect('/VYD/KmlManager/kmls')
 
-    return render(request, 'form_markers.html')
+    return render(request, 'presentation/presentation_form_markers.html')
 
 
 @csrf_exempt
@@ -221,7 +221,7 @@ def make_circle_KML(request):
 
         return HttpResponseRedirect('/VYD/KmlManager/kmls')
 
-    return render(request, 'form_circle.html')
+    return render(request, 'presentation/presentation_form_circle.html')
 
 
 @csrf_exempt
@@ -253,7 +253,7 @@ def make_dome_KML(request):
 
         return HttpResponseRedirect('/VYD/KmlManager/kmls')
 
-    return render(request, 'form_dome.html')
+    return render(request, 'presentation/presentation_form_dome.html')
 
 
 @csrf_exempt
@@ -285,4 +285,4 @@ def make_cylinder_KML(request):
 
         return HttpResponseRedirect('/VYD/KmlManager/kmls')
 
-    return render(request, 'form_cylinder.html')
+    return render(request, 'presentation/presentation_form_cylinder.html')

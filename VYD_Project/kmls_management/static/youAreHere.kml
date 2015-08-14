@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <NetworkLink>
+    <name>You Are Here NetworkLink demo</name>
+	<open>1</open>
+    <snippet>Auto-refreshes when view changes</snippet>
+    <description><![CDATA[This demonstrates how a KML NetworkLink can be used to auto-generate a Placemark at the center of the view
+and auto-refreshes whenever the view changes.<P/>
+A good starting point is a hilly or mountains region where the center of the view dramtically changes
+given what is at the center of the view (e.g., <a href="http://kml4earth.appspot.com:80/kml/startingPlaces.kml#MtWashington;flyto">Mt. Washington</a>).
+Change the tilt also to affect the center point.
+<P>
+Click on the <EM>'You are here'</EM> placemark to see client properties retrieved from Google Earth.
+<P>
+Powered by <a href="http://kml4earth.appspot.com/">Kml4Earth</a>]]></description>
+	<Style>
+        <BalloonStyle>
+		<bgColor>ffffffbb</bgColor>
+		<text><![CDATA[<b><font color="#CC0000" size="+3">$[name]</font></b><br/><br/>
+		$[description]<br/>
+      ]]></text>
+        </BalloonStyle>
+      </Style>
+	<Link>
+		<href>http://kml4earth.appspot.com:80/youAreHere.gsp</href>
+		<refreshMode>onChange</refreshMode>
+		<viewRefreshMode>onStop</viewRefreshMode>
+		<viewRefreshTime>1</viewRefreshTime>
+		<viewFormat>BBOX=[bboxWest],[bboxSouth],[bboxEast],[bboxNorth]&amp;LookAt=[lookatLon],[lookatLat],[lookatRange]&amp;LookatHeading=[lookatHeading]&amp;LookatTilt=[lookatTilt]&amp;LookatTerrain=[lookatTerrainLon],[lookatTerrainLat],[lookatTerrainAlt]&amp;terrain=[terrainEnabled]</viewFormat>
+	</Link>
+  </NetworkLink>
+</kml>

@@ -10,14 +10,6 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
-
-<style>
-    #map-canvas {
-    width: 500px;
-    height: 400px;
-    }
-</style>
 
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 
@@ -64,34 +56,32 @@
             });
         };
 
-
-
-
-
-
 </script>
 
-
 </head>
-<body bgcolor="#e8eaf6">
+<body bgcolor="#e0f7fa">
+
+    <nav>
+    <div class="nav-wrapper cyan ">
+
+      <a href="#" class="brand-logo center">Liquid Galaxy
+      </a>
+
+
+    </div>
+  </nav>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="/static/js/materialize.min.js"></script>
 
 <div class="container">
 
-    <nav>
-        <div class="nav-wrapper  indigo darken-4">
-            <a href="#" class="brand-logo center">Liquid Galaxy</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-
-            </ul>
-        </div>
-    </nav>
-
     {% block content %}
 
     {% endblock content %}
+
+
+</div>
 
     <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
         <a class="btn-floating btn-large pink accent-2">
@@ -106,8 +96,27 @@
             </a></li>
         </ul>
     </div>
-
-
-</div>
 </body>
+
+<footer class="footer-copyright cyan" style="position:fixed;width: 100%;bottom: 0;left: 0; " >
+
+            <div class="container">
+           <p class="grey-text text-lighten-4"> © 2015 View Your Data OpenSource project</p>
+            <a class="grey-text text-lighten-4 right" href="https://es.linkedin.com/pub/marc-solé-farré/6a/55b/9b3">
+
+                <img src="http://www.southerndredgingandmarine.com/sites/default/files/linkedin-icon-logo-vector.png" alt="Smiley face" width="30" height="30">
+
+            </a>
+            <a class="grey-text text-lighten-4 right" href="https://github.com/hellfish90/ViewYourData">
+
+                <img src="http://projects.theforeman.org/plugin_assets/redmine_omniauth_github/images/github_login_icon.png?1432886264" alt="Smiley face" width="30" height="30">
+
+            </a>
+
+
+            </div>
+
+</footer>
+
+
 </html>
