@@ -10,8 +10,8 @@
 
 
 
-</script>
 
+</script>
 
 <nav>
     <div class="nav-wrapper light-blue darken-4 ">
@@ -29,70 +29,67 @@
 
                 <span class="card-title"><span class=" teal-text text-darken-3">Set the data for create a Circle presentation</span></span>
 
-                    <div class="row teal-text text-darken-3" style="padding-left:30px; padding-right:30px; padding-top:30px">
+                <div class="row teal-text text-darken-3"
+                     style="padding-left:30px; padding-right:30px; padding-top:30px">
                             <span class="flow-text">
                                  <form method="post" action="/VYD/layers/create/makeCylinder">
 
-                                            <div class="row">
-                                            <div class="input-field col s12">
-                                                <input placeholder="Name of the layer" name="kml_name" id="kml_name" type="text" class="validate">
-                                                <label for="kml_name">File Name</label>
-                                            </div>
-                                            </div>
+                                     <div class="row">
+                                         <div class="input-field col s12">
+                                             <input placeholder="Name of the layer" name="kml_name" id="kml_name"
+                                                    type="text" class="validate">
+                                             <label for="kml_name">File Name</label>
+                                         </div>
+                                     </div>
 
-                                            <div class="row">
-                                            <div class="input-field col s12">
-                                                <input id="altitude" name="altitude" type="number" class="validate" value="5000">
-                                                <label for="altitude">Altitude</label>
-                                            </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="input-field col s12">
-                                                    <input id="multiplier" name="multiplier" type="number" class="validate" value="8000">
-                                                    <label for="multiplier">Multiplier</label>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="input-field col s12">
-                                                    <input id="radius" name="radius" type="number" class="validate" value="5000">
-                                                    <label for="radius">Radius</label>
-                                                </div>
-                                            </div>
+                                     <div class="row">
+                                         <div class="input-field col s12">
+                                             <input id="altitude" name="altitude" type="number" class="validate"
+                                                    value="5000">
+                                             <label for="altitude">Altitude</label>
+                                         </div>
+                                     </div>
+                                     <div class="row">
+                                         <div class="input-field col s12">
+                                             <input id="multiplier" name="multiplier" type="number" class="validate"
+                                                    value="8000">
+                                             <label for="multiplier">Multiplier</label>
+                                         </div>
+                                     </div>
+                                     <div class="row">
+                                         <div class="input-field col s12">
+                                             <input id="radius" name="radius" type="number" class="validate"
+                                                    value="5000">
+                                             <label for="radius">Radius</label>
+                                         </div>
+                                     </div>
 
-                                            <div class="row">
-                                                <div class="input-field col s12">
-                                                    <select name="color" title="color">
-                                                        <option value="Blue" disabled selected>Choose the color</option>
-                                                        <option value="Red">Red</option>
-                                                        <option value="Green">Green</option>
-                                                        <option value="Yellow">Yellow</option>
-                                                        <option value="Blue">Blue</option>
-                                                    </select>
-                                                </div>
-                                            </div>
+                                     <div class="row">
+                                         <div class="input-field col s12">
+                                             <select name="color" title="color">
+                                                 <option value="Blue" disabled selected>Choose the color</option>
+                                                 <option value="Red">Red</option>
+                                                 <option value="Green">Green</option>
+                                                 <option value="Yellow">Yellow</option>
+                                                 <option value="Blue">Blue</option>
+                                             </select>
+                                         </div>
+                                     </div>
 
 
-                                        <div  class="row right-align col s12" style="padding-top:30px">
-                                        <button class="btn waves-effect waves-light" type="submit" name="action">Create
-                                            <i class="mdi-content-send right"></i>
-                                        </button>
-                                        </div>
+                                     <div class="row right-align col s12" style="padding-top:30px">
+                                         <button class="btn waves-effect waves-light" type="submit" name="action">Create
+                                             <i class="mdi-content-send right"></i>
+                                         </button>
+                                     </div>
 
-                                </form>
+                                 </form>
                              </span>
-                    </div>
-
-
-
+                </div>
             </div>
-
         </div>
     </div>
 </div>
-
-
-
-
 
 
 {% endblock content %}
