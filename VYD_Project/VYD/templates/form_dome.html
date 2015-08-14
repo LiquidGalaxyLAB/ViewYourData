@@ -18,62 +18,89 @@
 
 
         <div class="brand-logo center">
-            <span class="white-text text-darken-2"><H4 class="center-align ">Select Parameters for create
-                Domes</H4></span>
+            <span class="white-text text-darken-2"><H4 class="center-align ">Dome</H4></span>
         </div>
     </div>
 </nav>
 
+<div class="row">
+    <div class="col s12 ">
+        <div class="card  white ">
+            <div class="card-content white-text">
 
-<form method="post" action="/VYD/layers/create/makeDome">
-    <div class="row">
-        <div class="row">
-            <div class="input-field col s12">
-                <input placeholder="Name of the layer" name="kml_name" id="kml_name" type="text" class="validate">
-                <label for="kml_name">File Name</label>
+                <span class="card-title"><span class=" teal-text text-darken-3">Set the data for create a Circle presentation</span></span>
+
+                    <div class="row teal-text text-darken-3" style="padding-left:30px; padding-right:30px; padding-top:30px">
+                            <span class="flow-text">
+                                 <form method="post" action="/VYD/layers/create/makeDome">
+
+
+                                            <div class="row">
+                                            <div class="input-field col s12">
+                                                <input placeholder="Name of the layer" name="kml_name" id="kml_name" type="text" class="validate">
+                                                <label for="kml_name">File Name</label>
+                                            </div>
+                                            </div>
+                                            <div class="row">
+
+                                            <div class="input-field col s12">
+                                                <input id="altitude" name="altitude" type="number" class="validate" value="0">
+                                                <label for="altitude">Altitude</label>
+                                            </div>
+                                                </div>
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="multiplier" name="multiplier" type="number" step="0.01" class="validate" value="0.4">
+                                                    <label for="multiplier">Scale</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <select name="color" title="color">
+                                                        <option value="Blue" disabled selected>Choose the color</option>
+                                                        <option value="Red">Red</option>
+                                                        <option value="Green">Green</option>
+                                                        <option value="Yellow">Yellow</option>
+                                                        <option value="Blue">Blue</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <select name="opacity" title="color">
+                                                        <option value="100" disabled selected>Choose opacity color</option>
+                                                        <option value="100">100%</option>
+                                                        <option value="75">75%</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+
+                                        <div  class="row right-align col s12" style="padding-top:30px">
+                                        <button class="btn waves-effect waves-light" type="submit" name="action">Create
+                                            <i class="mdi-content-send right"></i>
+                                        </button>
+                                            </div>
+
+
+                                </form>
+                             </span>
+                    </div>
+
+
+
             </div>
-
-            <div class="input-field col s12">
-                <input id="altitude" name="altitude" type="number" class="validate" value="0">
-                <label for="altitude">Altitude</label>
-            </div>
-
-            <div class="input-field col s12">
-                <input id="multiplier" name="multiplier" type="number" step="0.01" class="validate" value="0.4">
-                <label for="multiplier">Multiplier</label>
-            </div>
-
-
-            <div class="row">
-                <div class="input-field col s12">
-                    <select name="color" title="color">
-                        <option value="Blue" disabled selected>Choose the color</option>
-                        <option value="Red">Red</option>
-                        <option value="Green">Green</option>
-                        <option value="Yellow">Yellow</option>
-                        <option value="Blue">Blue</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="input-field col s12">
-                    <select name="opacity" title="color">
-                        <option value="100" disabled selected>Choose opacity color</option>
-                        <option value="100">100%</option>
-                        <option value="75">75%</option>
-                    </select>
-                </div>
-            </div>
-
 
         </div>
-        <button class="btn waves-effect waves-light" type="submit" name="action">Create
-            <i class="mdi-content-send right"></i>
-        </button>
     </div>
+</div>
 
-</form>
+
+
+
 
 
 {% endblock content %}
