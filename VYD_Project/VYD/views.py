@@ -1,4 +1,3 @@
-
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 import sys
@@ -38,10 +37,12 @@ def submit_url(request):
 
     return render(request, 'parser_download_url_submit.html', {'form': form})
 
+
 def download_page(request):
     # if this is a POST request we need to process the form data
 
     return render(request, 'loading_page.html')
+
 
 @csrf_exempt
 def download_file(request):
@@ -68,9 +69,9 @@ def download_file(request):
 def file_info_view(request):
     return render(request, 'parser_download_file_type.html')
 
+
 @csrf_exempt
 def select_data_of_header(request):
-
     type_location = request.POST.get(u"\u201dtype_location\u201d")
     data_loc = request.POST.get('data_loc')
     parseManager = ParseManager.getParseManager("")
@@ -80,14 +81,14 @@ def select_data_of_header(request):
     # I rest 1 for prosecute correctly on the parseManager
     if type_location == "coor":
         print "HEy I'm coordinates"
-        parseManager.coor_lat = int(request.POST['location_lat'])-1
-        parseManager.coor_lng = int(request.POST['location_lng'])-1
-        print "Coor Lat: "+ str(parseManager.coor_lat)
-        print "Coor Lng: "+ str(parseManager.coor_lng)
+        parseManager.coor_lat = int(request.POST['location_lat']) - 1
+        parseManager.coor_lng = int(request.POST['location_lng']) - 1
+        print "Coor Lat: " + str(parseManager.coor_lat)
+        print "Coor Lng: " + str(parseManager.coor_lng)
 
     elif type_location == "name":
         parseManager.extra_location = request.POST['extra_location']
-        parseManager.location_name = int(request.POST['location_headers_selected'])-1
+        parseManager.location_name = int(request.POST['location_headers_selected']) - 1
         print "Location: " + str(parseManager.location_name)
         print "Extra Location" + parseManager.extra_location
 
@@ -95,17 +96,15 @@ def select_data_of_header(request):
 
     if data_loc == None:
         parseManager.type_loc = type_location
-        return render(request, 'data_header_selector.html')
+        return render(request, 'parser_selector_data.html')
     else:
-        parseManager.data_loc = int(data_loc)-1
+        parseManager.data_loc = int(data_loc) - 1
         print "Data loc: " + str(parseManager.data_loc)
         return HttpResponseRedirect('/VYD/layers/create/loadParseData')
 
 
-
 @csrf_exempt
 def redirect_for_type_location(request):
-
     parseManager = ParseManager.getParseManager("")
     request.session['headers'] = parseManager.get_header()
 
@@ -123,7 +122,6 @@ def load_parse_data(request):
 
 @csrf_exempt
 def parse_data(request):
-
     parseManager = ParseManager.getParseManager("")
 
     if parseManager.type_loc == "name":
@@ -139,12 +137,11 @@ def parse_data(request):
 
 @csrf_exempt
 def view_data_and_location_selected(request):
-
     parseManager = ParseManager.getParseManager("")
 
     request.session['data_set'] = ParseManager.data
 
-    setData=[]
+    setData = []
     setCoordinates = []
 
     for line in parseManager.data[0]:
@@ -152,23 +149,25 @@ def view_data_and_location_selected(request):
         setData.append(line['data'])
 
 
-    #print "DATA In PARSE MANAGER : "
+    # print "DATA In PARSE MANAGER : "
     #print parseManager.data
 
 
     return render(request, 'view_data_location_selected.html', {'data_set': parseManager.data[0]})
 
+
 @csrf_exempt
 def error_page(request):
     return render(request, 'error_page.html')
+
 
 @csrf_exempt
 def presentation_selector(request):
     return render(request, 'presentation_menu.html')
 
+
 @csrf_exempt
 def make_marker_KML(request):
-
     if request.method == 'POST':
         kml_name = request.POST.get('kml_name')
         icon_marker = request.POST.get('icon_marker')
@@ -186,16 +185,16 @@ def make_marker_KML(request):
         markerTours.makeFile()
 
         kml_file = Kml(visibility=False)
-        kml_file.file.name= 'kmls_management/static/'+kml_name
+        kml_file.file.name = 'kmls_management/static/' + kml_name
         kml_file.save()
         request.session.clear()
         return HttpResponseRedirect('/VYD/KmlManager/kmls')
 
     return render(request, 'form_markers.html')
 
+
 @csrf_exempt
 def make_circle_KML(request):
-
     if request.method == 'POST':
         kml_name = request.POST.get('kml_name')
         color = request.POST.get('color')
@@ -215,21 +214,18 @@ def make_circle_KML(request):
         circle_Generator = CircleGenerator(parseManager.data[0], kml_name, color, altitude, multiplier)
         circle_Generator.generate()
         kml_file = Kml(visibility=False)
-        kml_file.file.name= 'kmls_management/static/'+kml_name
+        kml_file.file.name = 'kmls_management/static/' + kml_name
         kml_file.save()
 
         request.session.clear()
 
         return HttpResponseRedirect('/VYD/KmlManager/kmls')
 
-
-
     return render(request, 'form_circle.html')
 
 
 @csrf_exempt
 def make_dome_KML(request):
-
     if request.method == 'POST':
         kml_name = request.POST.get('kml_name')
         color = request.POST.get('color')
@@ -250,20 +246,18 @@ def make_dome_KML(request):
         dome_Generator = DomeGenerator(parseManager.data[0], kml_name, color, altitude, multiplier, opacity)
         dome_Generator.generate()
         kml_file = Kml(visibility=False)
-        kml_file.file.name= 'kmls_management/static/'+kml_name
+        kml_file.file.name = 'kmls_management/static/' + kml_name
         kml_file.save()
 
         request.session.clear()
 
         return HttpResponseRedirect('/VYD/KmlManager/kmls')
 
-
-
     return render(request, 'form_dome.html')
+
 
 @csrf_exempt
 def make_cylinder_KML(request):
-
     if request.method == 'POST':
         kml_name = request.POST.get('kml_name')
         color = request.POST.get('color')
@@ -284,13 +278,11 @@ def make_cylinder_KML(request):
         dome_Generator = CylinderGenerator(parseManager.data[0], kml_name, color, altitude, multiplier, radius)
         dome_Generator.generate()
         kml_file = Kml(visibility=False)
-        kml_file.file.name= 'kmls_management/static/'+kml_name
+        kml_file.file.name = 'kmls_management/static/' + kml_name
         kml_file.save()
 
         request.session.clear()
 
         return HttpResponseRedirect('/VYD/KmlManager/kmls')
-
-
 
     return render(request, 'form_cylinder.html')

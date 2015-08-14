@@ -7,62 +7,61 @@
         $('select').material_select();
       });
 
+
 </script>
 
 
-    <nav>
-        <div class="nav-wrapper light-blue darken-4 ">
+<nav>
+    <div class="nav-wrapper light-blue darken-4 ">
 
 
-            <div class="brand-logo center">
-                <span class="white-text text-darken-2"><H4 class="center-align ">Select Parameters for create Circles</H4></span>
-            </div>
+        <div class="brand-logo center">
+            <span class="white-text text-darken-2"><H4 class="center-align ">Select Parameters for create
+                Circles</H4></span>
         </div>
-    </nav>
+    </div>
+</nav>
 
 
-
-    <form method="post" action="/VYD/layers/create/makeCircle">
+<form method="post" action="/VYD/layers/create/makeCircle">
+    <div class="row">
         <div class="row">
-      <div class="row">
-        <div class="input-field col s12">
-          <input placeholder="Name of the layer" name="kml_name" id="kml_name" type="text" class="validate" >
-          <label for="kml_name">File Name</label>
+            <div class="input-field col s12">
+                <input placeholder="Name of the layer" name="kml_name" id="kml_name" type="text" class="validate">
+                <label for="kml_name">File Name</label>
+            </div>
+
+            <div class="input-field col s12">
+                <input id="altitude" name="altitude" type="number" class="validate" value="1500">
+                <label for="altitude">Altitude</label>
+            </div>
+
+            <div class="input-field col s12">
+                <input id="multiplier" name="multiplier" type="number" class="validate" value="1000">
+                <label for="multiplier">Multiplier</label>
+            </div>
+
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <select name="color" title="color">
+                        <option value="Blue" disabled selected>Choose the color</option>
+                        <option value="Red">Red</option>
+                        <option value="Green">Green</option>
+                        <option value="Yellow">Yellow</option>
+                        <option value="Blue">Blue</option>
+                    </select>
+                </div>
+            </div>
+
+
         </div>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Create
+            <i class="mdi-content-send right"></i>
+        </button>
+    </div>
 
-        <div class="input-field col s12">
-          <input id="altitude" name="altitude" type="number" class="validate" value="1500">
-          <label for="altitude">Altitude</label>
-        </div>
-
-          <div class="input-field col s12">
-          <input id="multiplier" name="multiplier" type="number" class="validate" value="1000">
-          <label for="multiplier">Multiplier</label>
-        </div>
-
-
-      <div class="row">
-           <div class="input-field col s12">
-            <select name="color" title="color">
-              <option value="Blue" disabled selected>Choose the color</option>
-              <option value="Red">Red</option>
-              <option value="Green">Green</option>
-              <option value="Yellow">Yellow</option>
-              <option value="Blue">Blue</option>
-            </select>
-          </div>
-      </div>
-
-
-      </div>
-          <button class="btn waves-effect waves-light" type="submit" name="action">Create
-             <i class="mdi-content-send right"></i>
-          </button>
-        </div>
-
-    </form>
-
-
+</form>
 
 
 {% endblock content %}

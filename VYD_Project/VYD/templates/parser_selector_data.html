@@ -1,0 +1,62 @@
+{% extends "template.html" %}
+{% block content %}
+
+<nav>
+    <div class="nav-wrapper light-blue darken-4 ">
+
+
+        <div class="brand-logo center">
+            <span class="white-text text-darken-2"><H4 class="center-align ">Select Data and Location</H4></span>
+        </div>
+    </div>
+</nav>
+
+<form id="form1" method="post" action="/VYD/layers/create/selectData">
+    <input style="visibility: hidden;" name=”type_location” type=”hidden” value=data>
+</form>
+
+<div class="row">
+    <div class="col s12 ">
+        <div class="card  white ">
+            <div class="card-content white-text">
+
+                <span class="card-title"><span class=" teal-text text-darken-3">Select Data </span></span>
+
+                <p><span class=" teal-text text-darken-3">For create the layer first you want to copy the URL of the dataset that you want create Layer</span>
+                </p>
+
+                <div class="row right-align">
+                    <button form="form1" class="btn waves-effect waves-light right-align" type="submit" name="action">
+                        Submit
+                        <i class="material-icons">send</i>
+                    </button>
+                </div>
+
+                <div class="row" style="padding-top:30px">
+                    <div class="col s12 grid-example ">
+                            <span class="flow-text">
+                                <div class="row">
+                                    {% for header in request.session.headers %}
+                                    <div class="row" style="padding-left:30px">
+                                        <input form="form1" name="data_loc" type="checkbox" id="{{ forloop.counter }}"
+                                               value="{{ forloop.counter }}"/>
+                                        <label for="{{ forloop.counter }}">{{header}}</label>
+                                    </div>
+                                    {% empty %}
+                                    <li class="list-group-item">No headers something is wrong (maybe the parse or the
+                                        type of the format of the file)
+                                    </li>
+                                    {% endfor %}
+                                </div>
+                             </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

@@ -1,119 +1,131 @@
 {% extends "template.html" %}
 {% block content %}
 
-    <nav>
-        <div class="nav-wrapper light-blue darken-4 ">
+<nav>
+    <div class="nav-wrapper light-blue darken-4 ">
 
 
-            <div class="brand-logo center">
-                <span class="white-text text-darken-2"><H4 class="center-align ">Select Data and Location</H4></span>
+        <div class="brand-logo center">
+            <span class="white-text text-darken-2"><H4 class="center-align ">Select Presentation</H4></span>
+        </div>
+    </div>
+</nav>
+
+<div class="row">
+    <div class="col s12 ">
+        <div class="card  white ">
+            <div class="card-content white-text">
+
+                <span class="card-title"><span
+                        class=" teal-text text-darken-3">Select the type of representation </span></span>
+
+                <p><span class=" teal-text text-darken-3">Select the type of representation for the data that you selected</span>
+                </p>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="card-panel white center center-align">
+
+    <div class="row">
+
+
+        <div class="col l3 m6 s12">
+            <div class="card">
+                <div class="card-image">
+                    <img height="100" width="100" src="http://www.primeshowers.com/images/marker.png">
+                    <span class="card-title">""</span>
+                </div>
+                <div class="card-content">
+
+                    <p>Show your data with personalized circle</p>
+
+                </div>
+                <div class="card-action">
+                    <button onclick="location.href='/VYD/layers/create/makeMarker'"
+                            class="btn waves-effect waves-light right-align" type="submit" name="action">Select
+                        <i class="material-icons">send</i>
+                    </button>
+                </div>
             </div>
         </div>
-    </nav>
 
 
+        <div class="col l3 m6 s12">
+            <div class="card">
+                <div class="card-image">
+                    <img height="100" width="100"
+                         src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgwd0OPzUYK2niPFYI4VrwHfHrTX3vvV2HgSJyzuMsyZHyuIvc">
+                    <span class="card-title">""</span>
+                </div>
+                <div class="card-content">
+
+                    <p>Show your data with personalized circle</p>
+
+                </div>
+                <div class="card-action">
+                    <button onclick="location.href='/VYD/layers/create/makeCircle'"
+                            class="btn waves-effect waves-light right-align" type="submit" name="action">Select
+                        <i class="material-icons">send</i>
+                    </button>
+                </div>
+            </div>
+        </div>
 
 
-          <div class="card-panel blue lighten-5 center center-align">
+        <div class="col l3 m6 s12">
+            <div class="card">
+                <div class="card-image">
+                    <img height="100" width="100"
+                         src="http://1.bp.blogspot.com/_yECf1Q0GlOk/SBcwMjJBikI/AAAAAAAABZ0/uO_JQ-5UFaQ/s400/google_earth_collada_sphere.png">
+                    <span class="card-title">""</span>
+                </div>
+                <div class="card-content">
 
-    <div class="row" >
+                    <p>Show your data with personalized circle</p>
 
-
-                                <div class="col l3 m6 s12">
-                                  <div class="card">
-                                    <div class="card-image">
-                                      <img height="100" width="100" src="http://www.primeshowers.com/images/marker.png">
-                                      <span class="card-title">""</span>
-                                    </div>
-                                    <div class="card-content">
-
-                                      <p>Show your data with personalized circle</p>
-
-                                    </div>
-                                    <div class="card-action">
-                                              <button onclick="location.href='/VYD/layers/create/makeMarker'" class="btn waves-effect waves-light right-align" type="submit" name="action">Select
-                                                    <i class="material-icons">send</i>
-                                            </button>
-                                    </div>
-                                  </div>
-                                </div>
+                </div>
+                <div class="card-action">
+                    <button onclick="location.href='/VYD/layers/create/makeDome'"
+                            class="btn waves-effect waves-light right-align" type="submit" name="action">Select
+                        <i class="material-icons">send</i>
+                    </button>
+                </div>
+            </div>
+        </div>
 
 
+        <div class="col l3 m6 s12">
+            <div class="card">
+                <div class="card-image">
+                    <img height="100" width="100" src="http://photos.gograph.com/thumbs/CSP/CSP221/k2219809.jpg">
+                    <span class="card-title">""</span>
+                </div>
+                <div class="card-content">
 
-                                <div class="col l3 m6 s12">
-                                  <div class="card">
-                                    <div class="card-image">
-                                      <img height="100" width="100" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTgwd0OPzUYK2niPFYI4VrwHfHrTX3vvV2HgSJyzuMsyZHyuIvc">
-                                      <span class="card-title">""</span>
-                                    </div>
-                                    <div class="card-content">
+                    <p>Show your data with personalized cylinder</p>
 
-                                      <p>Show your data with personalized circle</p>
-
-                                    </div>
-                                    <div class="card-action">
-                                              <button onclick="location.href='/VYD/layers/create/makeCircle'" class="btn waves-effect waves-light right-align" type="submit" name="action">Select
-                                                    <i class="material-icons">send</i>
-                                            </button>
-                                    </div>
-                                  </div>
-                                </div>
-
-
-
-                                <div class="col l3 m6 s12">
-                                  <div class="card">
-                                    <div class="card-image">
-                                      <img height="100" width="100" src="http://1.bp.blogspot.com/_yECf1Q0GlOk/SBcwMjJBikI/AAAAAAAABZ0/uO_JQ-5UFaQ/s400/google_earth_collada_sphere.png">
-                                      <span class="card-title">""</span>
-                                    </div>
-                                    <div class="card-content">
-
-                                      <p>Show your data with personalized circle</p>
-
-                                    </div>
-                                    <div class="card-action">
-                                              <button onclick="location.href='/VYD/layers/create/makeDome'" class="btn waves-effect waves-light right-align" type="submit" name="action">Select
-                                                    <i class="material-icons">send</i>
-                                            </button>
-                                    </div>
-                                  </div>
-                                </div>
-
-
-
-                                <div class="col l3 m6 s12">
-                                  <div class="card">
-                                    <div class="card-image">
-                                      <img height="100" width="100" src="http://photos.gograph.com/thumbs/CSP/CSP221/k2219809.jpg">
-                                      <span class="card-title">""</span>
-                                    </div>
-                                    <div class="card-content">
-
-                                      <p>Show your data with personalized cylinder</p>
-
-                                    </div>
-                                    <div class="card-action">
-                                              <button onclick="location.href='/VYD/layers/create/makeCylinder'" class="btn waves-effect waves-light right-align" type="submit" name="action">Select
-                                                    <i class="material-icons">send</i>
-                                            </button>
-                                    </div>
-                                  </div>
-                                </div>
-
-                         </div>
-          </div>
-
+                </div>
+                <div class="card-action">
+                    <button onclick="location.href='/VYD/layers/create/makeCylinder'"
+                            class="btn waves-effect waves-light right-align" type="submit" name="action">Select
+                        <i class="material-icons">send</i>
+                    </button>
+                </div>
+            </div>
         </div>
 
     </div>
+</div>
 
+</div>
 
-
-
-
-
-
+</div>
 
 
 {% endblock content %}
