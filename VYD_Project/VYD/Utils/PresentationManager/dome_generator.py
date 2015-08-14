@@ -17,7 +17,7 @@ class DomeGenerator(object):
         kml = simplekml.Kml(open=1)
 
         for data in self.data_set:
-            print int(data['data'])
+            print round(data['data'])
 
             location = simplekml.Location(longitude=data['coordinates']['lng'], latitude=data['coordinates']['lat'],
                                           altitude=self.altitude)
@@ -25,7 +25,7 @@ class DomeGenerator(object):
             netlink.link.href = self.getFileRoute(self.color, self.opacity)
             netlink.link.viewrefreshmode = simplekml.ViewRefreshMode.onregion
 
-            value = self.multiplier * int(data['data'])
+            value = self.multiplier * round(data['data'])
             s_scale = simplekml.Scale(x=value, y=value, z=value)
 
             dome = kml.newmodel(altitudemode=simplekml.AltitudeMode.clamptoground, link=netlink, location=location)

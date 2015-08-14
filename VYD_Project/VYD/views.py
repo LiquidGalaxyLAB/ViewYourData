@@ -88,7 +88,11 @@ def select_data_of_header(request):
 
     elif type_location == "name":
         parseManager.extra_location = request.POST['extra_location']
-        parseManager.location_name = int(request.POST['location_headers_selected']) - 1
+        location_headers_selected = request.POST.get('location_headers_selected')
+        if location_headers_selected !=None:
+            parseManager.location_name = int(location_headers_selected) - 1
+        else:
+            parseManager.location_name =  -1
         print "Location: " + str(parseManager.location_name)
         print "Extra Location" + parseManager.extra_location
 

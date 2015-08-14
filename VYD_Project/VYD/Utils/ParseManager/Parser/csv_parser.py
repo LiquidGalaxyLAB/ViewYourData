@@ -71,7 +71,10 @@ class CsvParser(parser.Parser):
         for row in self.csv_Reader:
 
             if len(row) != 0:
-                loc = row[location_point].decode(self.encoding)
+                if location_point != -1:
+                    loc = row[location_point].decode(self.encoding)
+                else:
+                    loc = ""
                 data = row[data_point].decode(self.encoding)
 
                 data_row = {'data': data}

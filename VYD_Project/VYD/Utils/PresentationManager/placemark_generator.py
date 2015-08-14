@@ -110,7 +110,7 @@ class MarkersTour(object):
             # add a placemark for the data
             tour_doc.Document.Folder.append(
                 KML.Placemark(
-                    KML.name("?"),
+                    KML.name(data['data']),
                     KML.description(
                         "<h1>" + data['data'] + "</h1>"
                     ),
