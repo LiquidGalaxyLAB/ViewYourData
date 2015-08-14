@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from kmls_management import views
+
 urlpatterns = [
     url(r'^kmls', views.kmlManagerView),
     url(r'^showKMLOrHide', views.syncKML),

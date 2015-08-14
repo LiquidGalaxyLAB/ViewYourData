@@ -5,7 +5,6 @@ import requests
 
 
 def get_coordinates_by_location(location_data):
-
     query = ''
 
     if len(location_data) > 1:
@@ -14,7 +13,7 @@ def get_coordinates_by_location(location_data):
     else:
         query = location_data[0]
 
-    url = 'http://maps.google.com/maps/api/geocode/json?address='+query+'&sensor=false'
+    url = 'http://maps.google.com/maps/api/geocode/json?address=' + query + '&sensor=false'
     r = requests.get(url)
 
     # print r.status_code

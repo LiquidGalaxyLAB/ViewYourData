@@ -6,7 +6,6 @@ import os
 
 
 class DownloadDataSetManager(object):
-
     global dump
     file_type = None
     file_name = None
@@ -38,7 +37,7 @@ class DownloadDataSetManager(object):
     def __get_file_type(self):
 
         split_name = self.file_name.split(".")
-        ext = split_name[len(split_name)-1]
+        ext = split_name[len(split_name) - 1]
 
         if ext in self.extList:
             return ext
@@ -47,18 +46,17 @@ class DownloadDataSetManager(object):
 
     def __clean_temp_files(self):
         for file in os.listdir(self.tmp_path):
-            os.remove(self.tmp_path+file)
+            os.remove(self.tmp_path + file)
+
 
 if __name__ == '__main__':
-
-
     url = [
         ["biblioteche.csv",
          "csv",
-         [u'id', u'est', u'nord', u'denominazione', u'indirizzo', u'comune', u'provincia', u'id_rete_biblio', u'cod_rete_biblio', u'desc_rete_biblio'],
+         [u'id', u'est', u'nord', u'denominazione', u'indirizzo', u'comune', u'provincia', u'id_rete_biblio',
+          u'cod_rete_biblio', u'desc_rete_biblio'],
          "http://mappe.regione.toscana.it/db-webgis/biblio/example_postgis.jsp?format=csv"],
-        ]
-
+    ]
 
     fi = DownloadDataSetManager()
     fi.set_url(url[0][3])

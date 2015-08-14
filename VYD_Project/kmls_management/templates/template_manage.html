@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <title>VYD</title>
 
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="/static/css/materialize.min.css"  media="screen,projection"/>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="/static/css/materialize.min.css" media="screen,projection"/>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    </head>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
 
-    <style>
-      #map-canvas {
-        width: 500px;
-        height: 400px;
-      }
-    </style>
+<style>
+    #map-canvas {
+    width: 500px;
+    height: 400px;
+    }
+</style>
 
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
 
-    <script>
+<script>
 
         function firstSyncData(id) {
             console.log("call to download Page is working!") // sanity check
@@ -88,43 +88,45 @@
         };
 
 
-    </script>
+
+</script>
 
 
 </head>
 <body bgcolor="#e8eaf6">
 
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="/static/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/static/js/materialize.min.js"></script>
 
 <div class="container">
 
     <nav>
         <div class="nav-wrapper  indigo darken-4">
-            <a  href="#" class="brand-logo center">Liquid Galaxy</a>
+            <a href="#" class="brand-logo center">Liquid Galaxy</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
 
             </ul>
         </div>
     </nav>
 
-{% block content %}
+    {% block content %}
 
 
+    {% endblock content %}
 
-
-{% endblock content %}
-
-          <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-    <a class="btn-floating btn-large pink accent-2">
-      <i class="large material-icons">settings</i>
-    </a>
-    <ul>
-      <li><a class="btn-floating blue" href="/VYD/KmlManager/importKML"  ><i class="material-icons">attach_file</i></a></li>
-      <li><a class="btn-floating red"  href="/VYD/layers/create/submitUrl"><i class="material-icons">add</i></i></a></li>
-      <li><a class="btn-floating green"  href="/VYD/KmlManager/kmls"><i class="material-icons">view_list</i></i></a></li>
-    </ul>
-  </div>
+    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+        <a class="btn-floating btn-large pink accent-2">
+            <i class="large material-icons">settings</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating blue" href="/VYD/KmlManager/importKML"><i class="material-icons">attach_file</i></a>
+            </li>
+            <li><a class="btn-floating red" href="/VYD/layers/create/submitUrl"><i class="material-icons">add</i></i>
+            </a></li>
+            <li><a class="btn-floating green" href="/VYD/KmlManager/kmls"><i class="material-icons">view_list</i></i>
+            </a></li>
+        </ul>
+    </div>
 
 </div>
 </body>

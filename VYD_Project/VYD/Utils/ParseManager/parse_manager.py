@@ -4,6 +4,7 @@ from exception import NoParserImplemented
 
 __author__ = 'hellfish90'
 
+
 class ParseManager(object):
     file_type = None
     file_path = None
@@ -22,7 +23,7 @@ class ParseManager(object):
     type_loc = None
 
     @staticmethod
-    def getParseManager(url, new = False):
+    def getParseManager(url, new=False):
 
         if new == True:
             ParseManager.parseManager = None
@@ -30,7 +31,7 @@ class ParseManager(object):
         if ParseManager.parseManager != None:
             return ParseManager.parseManager
         else:
-            ParseManager.parseManager=ParseManager(url)
+            ParseManager.parseManager = ParseManager(url)
             return ParseManager.parseManager
 
     def __init__(self, url):
@@ -54,8 +55,8 @@ class ParseManager(object):
         self.data = self.parser.get_set_by_data_and_location(data_position, location_name_point, location_extra_name)
         return self.data
 
-    def get_data_by_coordinates(self, data_positions,pos_latitude, pos_longitude ):
-        self.data  = self.parser.get_set_by_data_and_coordinates(data_positions, pos_latitude, pos_longitude)
+    def get_data_by_coordinates(self, data_positions, pos_latitude, pos_longitude):
+        self.data = self.parser.get_set_by_data_and_coordinates(data_positions, pos_latitude, pos_longitude)
         return self.data
 
     def get_type_file(self):
@@ -69,7 +70,8 @@ class ParseManager(object):
 
 
 if __name__ == '__main__':
-    parse_manager = ParseManager("https://data.lab.fiware.org/vi/dataset/76f7abda-2b8b-4af2-94a5-287f4822afec/resource/ee9e5b7b-e8f4-467b-b97c-a70acc0fcafa/download/olivo0415.csv")
+    parse_manager = ParseManager(
+        "https://data.lab.fiware.org/vi/dataset/76f7abda-2b8b-4af2-94a5-287f4822afec/resource/ee9e5b7b-e8f4-467b-b97c-a70acc0fcafa/download/olivo0415.csv")
 
     parse_manager.parse()
 
@@ -77,4 +79,4 @@ if __name__ == '__main__':
 
     print len(parse_manager.get_header())
 
-    print parse_manager.get_data_by_location(0,0,"Lleida")
+    print parse_manager.get_data_by_location(0, 0, "Lleida")

@@ -4,7 +4,6 @@ from polycircles import polycircles
 
 
 class CylinderGenerator(object):
-
     def __init__(self, data_set, kml_name, color, altitude, multiplier, radius):
         self.data_set = data_set
         self.kml_name = kml_name
@@ -16,81 +15,76 @@ class CylinderGenerator(object):
     def generate(self):
 
 
-
         kml = simplekml.Kml(open=1)
 
-        polygon_circle =[]
+        polygon_circle = []
 
         for data in self.data_set:
-                shape_polycircle = kml.newmultigeometry(name=data['data'])
+            shape_polycircle = kml.newmultigeometry(name=data['data'])
 
-                print int(data['data'])
+            print int(data['data'])
 
-                polycircle = polycircles.Polycircle(latitude=data['coordinates']['lat'],
-                                            longitude=data['coordinates']['lng'],
-                                            radius=self.radius,
-                                            number_of_vertices=100
-                                            )
+            polycircle = polycircles.Polycircle(latitude=data['coordinates']['lat'],
+                                                longitude=data['coordinates']['lng'],
+                                                radius=self.radius,
+                                                number_of_vertices=100
+                                                )
 
-                latloncircle = polycircle.to_lon_lat()
-                latlonaltcircle = []
+            latloncircle = polycircle.to_lon_lat()
+            latlonaltcircle = []
 
-                for element in latloncircle:
-                    tup = (element[0], element[1], (int(data['data'])*self.multiplier)+10,)
-                    latlonaltcircle.append(tup)
+            for element in latloncircle:
+                tup = (element[0], element[1], (int(data['data']) * self.multiplier) + 10,)
+                latlonaltcircle.append(tup)
 
-                for element in latloncircle:
-                    tup = (element[0], element[1], int(data['data'])*self.multiplier,)
-                    latlonaltcircle.append(tup)
-                    tup = (element[0], element[1], 0,)
-                    latlonaltcircle.append(tup)
+            for element in latloncircle:
+                tup = (element[0], element[1], int(data['data']) * self.multiplier,)
+                latlonaltcircle.append(tup)
+                tup = (element[0], element[1], 0,)
+                latlonaltcircle.append(tup)
 
+            for element in latloncircle:
+                tup = (element[0], element[1], 0,)
+                latlonaltcircle.append(tup)
+                tup = (element[0], element[1], int(data['data']) * self.multiplier,)
+                latlonaltcircle.append(tup)
 
-                for element in latloncircle:
-                    tup = (element[0], element[1], 0,)
-                    latlonaltcircle.append(tup)
-                    tup = (element[0], element[1], int(data['data'])*self.multiplier,)
-                    latlonaltcircle.append(tup)
+            for element in latloncircle:
+                tup = (element[0], element[1], 0,)
+                latlonaltcircle.append(tup)
 
-                for element in latloncircle:
-                    tup = (element[0], element[1], 0,)
-                    latlonaltcircle.append(tup)
+                latlonaltcircle.append(tup)
 
+            print latlonaltcircle
 
-                    latlonaltcircle.append(tup)
+            pol = shape_polycircle.newpolygon()
+            pol.outerboundaryis = latlonaltcircle
 
+            pol.altitudemode = simplekml.AltitudeMode.relativetoground
+            pol.extrude = 5
+            pol.style.polystyle.color = simplekml.Color.changealphaint(230, self.set_color(self.color))
+            pol.style.linestyle.color = simplekml.Color.changealphaint(230, self.set_color(self.color))
+            pol.style.linestyle.width = 5000
 
-                print latlonaltcircle
+            polygon_circle.append(polycircle)
 
-                pol = shape_polycircle.newpolygon()
-                pol.outerboundaryis = latlonaltcircle
+            latlonaltcircle = []
 
-                pol.altitudemode = simplekml.AltitudeMode.relativetoground
-                pol.extrude = 5
-                pol.style.polystyle.color = simplekml.Color.changealphaint(230, self.set_color(self.color))
-                pol.style.linestyle.color = simplekml.Color.changealphaint(230, self.set_color(self.color))
-                pol.style.linestyle.width = 5000
+            for element in latloncircle:
+                tup = (element[0], element[1], (int(data['data']) * self.multiplier) + 10,)
+                latlonaltcircle.append(tup)
+            pol = shape_polycircle.newpolygon()
+            pol.outerboundaryis = latlonaltcircle
 
-                polygon_circle.append(polycircle)
+            pol.altitudemode = simplekml.AltitudeMode.relativetoground
+            pol.extrude = 5
+            pol.style.polystyle.color = simplekml.Color.changealphaint(230, self.set_color(self.color))
+            pol.style.linestyle.color = simplekml.Color.changealphaint(230, self.set_color(self.color))
+            pol.style.linestyle.width = 5000
 
-                latlonaltcircle = []
+            polygon_circle.append(polycircle)
 
-                for element in latloncircle:
-                    tup = (element[0], element[1], (int(data['data'])*self.multiplier)+10,)
-                    latlonaltcircle.append(tup)
-                pol = shape_polycircle.newpolygon()
-                pol.outerboundaryis = latlonaltcircle
-
-                pol.altitudemode = simplekml.AltitudeMode.relativetoground
-                pol.extrude = 5
-                pol.style.polystyle.color = simplekml.Color.changealphaint(230, self.set_color(self.color))
-                pol.style.linestyle.color = simplekml.Color.changealphaint(230, self.set_color(self.color))
-                pol.style.linestyle.width = 5000
-
-                polygon_circle.append(polycircle)
-
-
-        kml.save("kmls_management/static/"+self.kml_name)
+        kml.save("kmls_management/static/" + self.kml_name)
 
     def set_color(self, color):
         if color == "Yellow":

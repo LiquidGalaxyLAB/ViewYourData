@@ -10,7 +10,6 @@ __author__ = 'hellfish90'
 
 
 class CsvParser(parser.Parser):
-
     def get_data_types(self):
 
         self.csv_file = open(self.filename, 'rb')
@@ -29,7 +28,6 @@ class CsvParser(parser.Parser):
             for item in headers:
                 u_head = item.decode(self.encoding)
                 u_headers.append(u_head)
-
 
         return u_headers
 

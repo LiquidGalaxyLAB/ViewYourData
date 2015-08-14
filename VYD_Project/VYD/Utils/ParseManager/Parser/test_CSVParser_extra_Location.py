@@ -13,8 +13,6 @@ if __name__ == '__main__':
 
     data_set = parser.get_set_by_data_and_location(5, 5, "")
 
-
-
     print ""
 
     for data in data_set[0]:

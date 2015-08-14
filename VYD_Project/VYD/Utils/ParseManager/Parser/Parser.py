@@ -11,7 +11,6 @@ class Parser(object):
         self.file = None
 
 
-
     def open_file(self):
         self.file = open(self.filename, 'rb')
 
@@ -26,7 +25,7 @@ class Parser(object):
 
     # Return two sets of data:
     # The first is a set of dictionaries of the lat, lng and data by the data_point, coordinates.
-    #   *location_extra is a extra variable for help the search of the location
+    # *location_extra is a extra variable for help the search of the location
     # The second set contains the rows that can't get coordinates
 
     # Example:
@@ -45,7 +44,7 @@ class Parser(object):
 
     # Return two sets of data:
     # The first is a set of dictionaries of the lat, lng and data by the data_point, location_point.
-    #   *location_extra is a extra variable for help the search of the location
+    # *location_extra is a extra variable for help the search of the location
     # The second set contains the rows that can't get coordinates
 
     # Example:

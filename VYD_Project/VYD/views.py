@@ -150,7 +150,7 @@ def view_data_and_location_selected(request):
 
 
     # print "DATA In PARSE MANAGER : "
-    #print parseManager.data
+    # print parseManager.data
 
 
     return render(request, 'view_data_location_selected.html', {'data_set': parseManager.data[0]})
