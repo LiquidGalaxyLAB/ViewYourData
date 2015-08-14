@@ -7,33 +7,55 @@
 
 
         <div class="brand-logo center">
-            <span class="white-text text-darken-2"><H4 class="center-align ">Select parameters for create
-                Markers</H4></span>
+            <span class="white-text text-darken-2"><H4 class="center-align ">Markers</H4></span>
         </div>
     </div>
 </nav>
 
 
 <div class="row">
-    <form method="post" action="/VYD/layers/create/makeMarker">
-        <div class="row">
-            <div class="input-field col s12">
-                <input placeholder="Name of the layer" name="kml_name" id="kml_name" type="text" class="validate">
-                <label for="kml_name">File Name</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <input placeholder="Set the URL of the marker image" id="icon_marker" name="icon_marker" type="url"
-                       class="validate">
-                <label for="icon_marker">URL Icon Marker</label>
-            </div>
-            <button class="btn waves-effect waves-light" type="submit" name="action">Create
-                <i class="mdi-content-send right"></i>
-            </button>
-        </div>
+    <div class="col s12 ">
+        <div class="card  white ">
+            <div class="card-content white-text">
 
-    </form>
+                <span class="card-title"><span class=" teal-text text-darken-3">Set the data for create a Markers presentation </span></span>
+
+                <div class="row" style="padding-top:30px">
+                     <span class="flow-text">
+                    <div class="col s12 grid-example ">
+                        <form method="post" action="/VYD/layers/create/makeMarker">
+                            <div class="row">
+                                <div class="input-field col s12 teal-text text-darken-3">
+                                    <input placeholder="Name of the layer" name="kml_name" id="kml_name" type="text"
+                                           class="validate">
+                                    <label for="kml_name">File Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12 teal-text text-darken-3">
+                                    <input placeholder="Set the URL of the marker image" id="icon_marker"
+                                           name="icon_marker" type="url"
+                                           class="validate">
+                                    <label for="icon_marker">URL Icon Marker</label>
+                                </div>
+                            <div class="row right-align">
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Create
+                                    <i class="mdi-content-send right"></i>
+                                </button>
+                            </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 </div>
+
 
 {% endblock content %}
