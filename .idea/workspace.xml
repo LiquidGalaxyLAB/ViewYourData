@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9471ea02-9ed3-469f-a9df-78aaf26a5eb2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/circle_generator.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/cylinder_generator.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/Polygon Styling.kml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/Polygon.kml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/VYD_Project/VYD/Utils/Tut_MultiGeometry.kml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/VYD_Project/VYD/Utils/requirements.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/VYD_Project/VYD/Utils/test_kml_polygon_3_manhattan.kml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/VYD_Project/VYD/Utils/test_polygon.kml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VYD_Project/db.sqlite3" afterPath="$PROJECT_DIR$/VYD_Project/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/placemark_generator.py" afterPath="$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/placemark_generator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VYD_Project/kmls_management/static/test_polygon.kml" afterPath="$PROJECT_DIR$/VYD_Project/kmls_management/static/test_polygon.kml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VYD_Project/VYD/Utils/vyd_Manager.py" afterPath="$PROJECT_DIR$/VYD_Project/VYD/Utils/vyd_Manager.py" />
+    <list default="true" id="9471ea02-9ed3-469f-a9df-78aaf26a5eb2" name="Default" comment="second version of the circle presentation">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENCE" afterPath="$PROJECT_DIR$/LICENCE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ParseManager.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,62 +27,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cylinder_generator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/cylinder_generator.py">
+      <file leaf-file-name="import_kml.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/templates/import_kml.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1620">
-              <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.39148352" vertical-offset="0" max-vertical-offset="870">
+              <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
               <folding>
-                <element signature="e#20#36#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vyd_Manager.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/vyd_Manager.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="945">
-              <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="838" max-vertical-offset="1590">
+              <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="placemark_generator.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/placemark_generator.py">
+      <file leaf-file-name="parser_download_url_submit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/parser/parser_download_url_submit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56" vertical-offset="765" max-vertical-offset="2895">
-              <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
-              <folding>
-                <element signature="e#21#52#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-14.708333" vertical-offset="202" max-vertical-offset="930">
+              <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="66" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="circle_generator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/circle_generator.py">
+      <file leaf-file-name="parser_download_file_type.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/parser/parser_download_file_type.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1035">
-              <caret line="63" column="39" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
-              <folding>
-                <element signature="e#47#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="polygon_generator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/polygon_generator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="4455">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="53" selection-end-column="39" />
-              <folding>
-                <element signature="e#20#36#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-10.0" vertical-offset="390" max-vertical-offset="1575">
+              <caret line="42" column="52" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="52" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -105,57 +77,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/data_header.html" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/LayerManager/syncLayers2.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/LayerManager/sync_test.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/LayerManager/synfile.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/LayerManager/syncLayers.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/location_name.html" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/file_type.html" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/load_parse_data.html" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/view_data_location.html" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/ParseManager/parser/test_CSVParser_location.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/ParseManager/parser/test_CSVParser_coordinates.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/ParseManager/parser/test_files/biblioteche.csv" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/ParseManager/parser/test_CSVParser_extra_Location.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/location_coordinates_selector.html" />
-        <option value="$PROJECT_DIR$/VYD_Project/test.kml" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD_Project/settings.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/ParseManager/parser/csv_parser.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/kmls_management/templates/template.html" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD_Project/urls.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/kmls_management/templates/template_manage.html" />
-        <option value="$PROJECT_DIR$/setup.sh" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/Polygon_generator.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/ParseManager/parse_manager.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/Tut_MultiGeometry.kml" />
         <option value="$PROJECT_DIR$/VYD_Project/VYD/forms.py" />
         <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/ParseManager/parser/parser.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/form_circle.html" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/data_header_selector.html" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/location_name_selector.html" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/view_data_location_selected.html" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/form_markers.html" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/template.html" />
         <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/error_page.html" />
-        <option value="$PROJECT_DIR$/VYD_Project/kmls_management/urls.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/kmls_management/models.py" />
         <option value="$PROJECT_DIR$/VYD_Project/kmls_management/static/test_polygon.kml" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/urls.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/presentation_menu.html" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/views.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/form_dome.html" />
-        <option value="$PROJECT_DIR$/VYD_Project/kmls_management/templates/manage_kml.html" />
-        <option value="$PROJECT_DIR$/VYD_Project/kmls_management/templates/import_kml.html" />
-        <option value="$PROJECT_DIR$/VYD_Project/kmls_management/forms.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/kmls_management/views.py" />
         <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/polygon_generator.py" />
         <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/cyrcle_generator.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/cylinder_generator.py" />
-        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/circle_generator.py" />
         <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/vyd_Manager.py" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/urls.py" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD_Project/urls.py" />
+        <option value="$PROJECT_DIR$/VYD_Project/kmls_management/models.py" />
+        <option value="$PROJECT_DIR$/VYD_Project/kmls_management/forms.py" />
+        <option value="$PROJECT_DIR$/VYD_Project/kmls_management/urls.py" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/file_type.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/create_download_url_submit.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/location_name_selector.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/create_download_file_type.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/create_selector_data_location_name.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/location_coordinates_selector.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/data_header_selector.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/parser_selector_location_name.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/form_markers.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/form_circle.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/presentation_menu.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/form_dome.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/form_cylinder.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/view_data_location_selected.html" />
+        <option value="$PROJECT_DIR$/LICENCE" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/parser/parser_download_url_submit.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/parser/parser_download_file_type.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/parser/parser_selector_location_name.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/presentation/presentation_form_circle.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/presentation/presentation_form_cylinder.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/presentation/presentation_form_dome.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/presentation/presentation_form_markers.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/presentation/presentation_menu.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/loading/loading_page.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/loading/loading_parse_data.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/ParseManager/parser/csv_parser.py" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/views.py" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/parser/parser_selector_data.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/parser/parser_result_data.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/circle_generator.py" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/cylinder_generator.py" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/dome_generator.py" />
         <option value="$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/placemark_generator.py" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/parser/parser_selector_location_coordinates.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/kmls_management/templates/template_manage.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/VYD/templates/template.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/kmls_management/templates/manage_kml.html" />
+        <option value="$PROJECT_DIR$/VYD_Project/kmls_management/views.py" />
+        <option value="$PROJECT_DIR$/VYD_Project/kmls_management/templates/import_kml.html" />
       </list>
     </option>
   </component>
@@ -192,6 +164,15 @@
     </navigator>
     <panes>
       <pane id="Scope">
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Problems" />
         <subPane subId="Project Files">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
@@ -248,7 +229,125 @@
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="VYD">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="templates">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ViewYourData">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="VYD_Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="VYD">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="templates">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="presentation">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ViewYourData">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="VYD_Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="VYD">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="templates">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="loading">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ViewYourData">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="VYD_Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT USER_OBJECT="kmls_management">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Changed Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ViewYourData">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="VYD_Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ViewYourData">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="VYD_Project">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="VYD">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="ViewYourData">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -301,6 +400,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="kmls_management" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ViewYourData" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VYD_Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kmls_management" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParseManager" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ViewYourData" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VYD_Project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="VYD" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -323,7 +462,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Utils" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -345,37 +484,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Utils" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="PresentationManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseManager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ViewYourData" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VYD_Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VYD" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ParseManager" />
+              <option name="myItemId" value="parser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -385,12 +498,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../HeyLily" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="options.lastSelected" value="preferences.general" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="true" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+    <property name="LayoutCode.rearrangeEntries" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -406,11 +521,11 @@
       <recent name="$PROJECT_DIR$/VYD_Project/VYD/Utils/LayerManager" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/VYD_Project/VYD/templates/loading" />
+      <recent name="$PROJECT_DIR$/VYD_Project/VYD/templates/presentation" />
+      <recent name="$PROJECT_DIR$/VYD_Project/VYD/templates/parser" />
       <recent name="$PROJECT_DIR$/VYD_Project/kmls_management/static" />
       <recent name="$PROJECT_DIR$/VYD_Project/VYD/Utils" />
-      <recent name="$PROJECT_DIR$/VYD_Project/VYD" />
-      <recent name="$PROJECT_DIR$/VYD_Project" />
-      <recent name="$PROJECT_DIR$/VYD_Project/VYD/templates" />
     </key>
   </component>
   <component name="RunManager" selected="Python.ParseManager">
@@ -739,14 +854,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-293" y="-1080" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2312253" sideWeight="0.49960285" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22924902" sideWeight="0.49960285" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13217483" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20537125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2547945" sideWeight="0.50039715" order="7" side_tool="true" content_ui="tabs" />
@@ -754,7 +869,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270751" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871288" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -764,25 +879,25 @@
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2554645" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32970297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2312253" sideWeight="0.49960285" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871288" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2547945" sideWeight="0.50039715" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3301887" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871288" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13217483" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -818,42 +933,16 @@
     <option name="LAST_COMMIT_MESSAGE" value="second version of the circle presentation" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/load_parse_data.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1140">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/ParseManager/parser/test_CSVParser_coordinates.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26881722" vertical-offset="0" max-vertical-offset="558">
-          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/ParseManager/parser/test_CSVParser_extra_Location.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/accessibiitat-lleida.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="73920">
           <caret line="0" column="90" selection-start-line="0" selection-start-column="90" selection-end-line="0" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/ParseManager/parser/csv_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="987" max-vertical-offset="1545">
-          <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -868,27 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="516">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD_Project/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.305499" vertical-offset="0" max-vertical-offset="982">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/location_coordinates_selector.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.625" vertical-offset="150" max-vertical-offset="1320">
-          <caret line="67" column="84" selection-start-line="67" selection-start-column="57" selection-end-line="67" selection-end-column="84" />
         </state>
       </provider>
     </entry>
@@ -914,59 +982,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/data_header_selector.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.416666" vertical-offset="68" max-vertical-offset="960">
-          <caret line="42" column="66" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/location_name_selector.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.791666" vertical-offset="278" max-vertical-offset="1020">
-          <caret line="47" column="60" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/view_data_location_selected.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.041667" vertical-offset="479" max-vertical-offset="1470">
-          <caret line="56" column="142" selection-start-line="56" selection-start-column="142" selection-end-line="56" selection-end-column="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/form_circle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.4166665" vertical-offset="227" max-vertical-offset="1095">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="30" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/form_markers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="645">
-          <caret line="26" column="84" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/plantago0415 (1).csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="660">
           <caret line="9" column="10" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/url_submit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7916665" vertical-offset="203" max-vertical-offset="900">
-          <caret line="26" column="92" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/error_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17216642" vertical-offset="0" max-vertical-offset="697">
-          <caret line="8" column="190" selection-start-line="8" selection-start-column="190" selection-end-line="8" selection-end-column="190" />
         </state>
       </provider>
     </entry>
@@ -1005,13 +1024,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
-          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../utils_VYD/doc.kml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="793">
@@ -1026,164 +1038,298 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/presentation_menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="506" max-vertical-offset="1575">
-          <caret line="67" column="181" selection-start-line="67" selection-start-column="181" selection-end-line="67" selection-end-column="181" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/form_dome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="1245">
-          <caret line="39" column="44" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.833334" vertical-offset="661" max-vertical-offset="1485">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="85" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/templates/template_manage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.083333" vertical-offset="652" max-vertical-offset="1500">
-          <caret line="58" column="18" selection-start-line="58" selection-start-column="18" selection-end-line="58" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/templates/manage_kml.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.125" vertical-offset="0" max-vertical-offset="810">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
-          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/templates/import_kml.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="345">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2762" max-vertical-offset="3720">
-          <caret line="229" column="26" selection-start-line="229" selection-start-column="21" selection-end-line="229" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
-          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding>
-            <element signature="e#21#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="601" max-vertical-offset="1305">
-          <caret line="56" column="54" selection-start-line="56" selection-start-column="54" selection-end-line="56" selection-end-column="69" />
-          <folding>
-            <element signature="e#1#53#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/static/testfile.kml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3710460">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/static/test_polygon.kml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12330">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
-          <caret line="5" column="57" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/ParseManager/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.0" vertical-offset="750" max-vertical-offset="1500">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/circle_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="1035">
-          <caret line="63" column="39" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
-          <folding>
-            <element signature="e#47#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/polygon_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="4455">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="53" selection-end-column="39" />
-          <folding>
-            <element signature="e#20#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/cylinder_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="795" max-vertical-offset="1620">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding>
-            <element signature="e#20#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/vyd_Manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="945">
-          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1035">
+          <caret line="62" column="66" selection-start-line="62" selection-start-column="66" selection-end-line="62" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="750">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD_Project/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16042781" vertical-offset="0" max-vertical-offset="748">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.040106952" vertical-offset="0" max-vertical-offset="748">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36096257" vertical-offset="0" max-vertical-offset="748">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10026738" vertical-offset="0" max-vertical-offset="748">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENCE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36" vertical-offset="0" max-vertical-offset="750">
+          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/presentation/presentation_form_circle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="1515">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/presentation/presentation_form_dome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="1650">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/presentation/presentation_form_markers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="990">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/presentation/presentation_menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08264463" vertical-offset="0" max-vertical-offset="2040">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/error_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16528925" vertical-offset="0" max-vertical-offset="726">
+          <caret line="8" column="119" selection-start-line="8" selection-start-column="119" selection-end-line="8" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/loading/loading_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30991736" vertical-offset="0" max-vertical-offset="1290">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/loading/loading_parse_data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30991736" vertical-offset="0" max-vertical-offset="1290">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/parser/parser_selector_location_name.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.875" vertical-offset="129" max-vertical-offset="1485">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/ParseManager/parser/csv_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56" vertical-offset="675" max-vertical-offset="1560">
+          <caret line="76" column="28" selection-start-line="76" selection-start-column="28" selection-end-line="76" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/parser/parser_selector_data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.30165288" vertical-offset="279" max-vertical-offset="1005">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/parser/parser_result_data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75206614" vertical-offset="834" max-vertical-offset="1560">
+          <caret line="92" column="10" selection-start-line="92" selection-start-column="10" selection-end-line="92" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/circle_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1020">
+          <caret line="30" column="61" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/cylinder_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1515">
+          <caret line="73" column="53" selection-start-line="73" selection-start-column="53" selection-end-line="73" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/dome_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/polygon_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02" vertical-offset="1395" max-vertical-offset="4335">
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/Utils/PresentationManager/placemark_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56" vertical-offset="765" max-vertical-offset="2895">
-          <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1380" max-vertical-offset="2895">
+          <caret line="112" column="39" selection-start-line="112" selection-start-column="39" selection-end-line="112" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1920" max-vertical-offset="4455">
+          <caret line="94" column="43" selection-start-line="94" selection-start-column="43" selection-end-line="94" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/parser/parser_selector_location_coordinates.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="2280">
+          <caret line="14" column="84" selection-start-line="14" selection-start-column="84" selection-end-line="14" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/presentation/presentation_form_cylinder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="1500">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.708334" vertical-offset="1102" max-vertical-offset="2070">
+          <caret line="113" column="90" selection-start-line="113" selection-start-column="90" selection-end-line="113" selection-end-column="90" />
           <folding>
-            <element signature="e#21#52#0" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#footer#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/templates/manage_kml.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.75" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/templates/template_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.833333" vertical-offset="1822" max-vertical-offset="2625">
+          <caret line="142" column="116" selection-start-line="142" selection-start-column="101" selection-end-line="142" selection-end-column="116" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#p#0;n#div#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/parser/parser_download_url_submit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.708333" vertical-offset="202" max-vertical-offset="930">
+          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="838" max-vertical-offset="1590">
+          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/VYD/templates/parser/parser_download_file_type.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0" vertical-offset="390" max-vertical-offset="1575">
+          <caret line="42" column="52" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/VYD_Project/kmls_management/templates/import_kml.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39148352" vertical-offset="0" max-vertical-offset="870">
+          <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
