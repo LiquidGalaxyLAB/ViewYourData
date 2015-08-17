@@ -22,7 +22,12 @@ class CylinderGenerator(object):
         for data in self.data_set:
             shape_polycircle = kml.newmultigeometry(name=data['data'])
 
-            print round(data['data'])
+            try:
+
+                data_alt = round(data['data'])
+
+            except TypeError:
+                data_alt = int(data['data'])
 
             polycircle = polycircles.Polycircle(latitude=data['coordinates']['lat'],
                                                 longitude=data['coordinates']['lng'],
@@ -34,11 +39,11 @@ class CylinderGenerator(object):
             latlonaltcircle = []
 
             for element in latloncircle:
-                tup = (element[0], element[1], (round(data['data']) * self.multiplier) + 10,)
+                tup = (element[0], element[1], (data_alt * self.multiplier) + 10,)
                 latlonaltcircle.append(tup)
 
             for element in latloncircle:
-                tup = (element[0], element[1], round(data['data']) * self.multiplier,)
+                tup = (element[0], element[1], data_alt * self.multiplier,)
                 latlonaltcircle.append(tup)
                 tup = (element[0], element[1], 0,)
                 latlonaltcircle.append(tup)
@@ -46,7 +51,7 @@ class CylinderGenerator(object):
             for element in latloncircle:
                 tup = (element[0], element[1], 0,)
                 latlonaltcircle.append(tup)
-                tup = (element[0], element[1], round(data['data']) * self.multiplier,)
+                tup = (element[0], element[1], data_alt * self.multiplier,)
                 latlonaltcircle.append(tup)
 
             for element in latloncircle:
@@ -71,7 +76,7 @@ class CylinderGenerator(object):
             latlonaltcircle = []
 
             for element in latloncircle:
-                tup = (element[0], element[1], (round(data['data']) * self.multiplier) + 10,)
+                tup = (element[0], element[1], (data_alt * self.multiplier) + 10,)
                 latlonaltcircle.append(tup)
             pol = shape_polycircle.newpolygon()
             pol.outerboundaryis = latlonaltcircle

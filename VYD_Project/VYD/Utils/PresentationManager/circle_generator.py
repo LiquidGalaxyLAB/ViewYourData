@@ -24,11 +24,15 @@ class CircleGenerator(object):
 
             shape_polycircle = kml.newmultigeometry(name=data['data'])
 
-            print round(data['data'])
+            try:
+                radius = round(data['data'])
+
+            except TypeError:
+                radius = int(data['data'])
 
             polycircle = polycircles.Polycircle(latitude=data['coordinates']['lat'],
                                                 longitude=data['coordinates']['lng'],
-                                                radius=(round(data['data']) + 1) * self.multiplier,
+                                                radius=(radius + 1) * self.multiplier,
                                                 number_of_vertices=36)
 
             latloncircle = polycircle.to_lon_lat()
