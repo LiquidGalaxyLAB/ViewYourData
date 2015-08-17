@@ -63,7 +63,7 @@
 </head>
 <body bgcolor="#e0f7fa">
 
-    <nav>
+    <nav style="position:fixed;z-index:999999;top:0">
     <div class="nav-wrapper cyan ">
 
       <a href="#" class="brand-logo center">View Your Data
@@ -77,15 +77,16 @@
 <script type="text/javascript" src="/static/js/materialize.min.js"></script>
 
 <div class="container">
+    <div style="margin-bottom:15%; margin-top:8%; z-index:9999">
 
     {% block content %}
 
     {% endblock content %}
-
+    </div>
 
 </div>
 
-    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;z-index:999999;">
         <a class="btn-floating btn-large pink accent-2">
             <i class="large material-icons">settings</i>
         </a>
@@ -100,20 +101,26 @@
     </div>
 </body>
 
-<footer class="footer-copyright cyan" style="position:fixed;width: 100%;bottom: 0;left: 0; " >
+<footer class="footer-copyright cyan" style="position:fixed;width: 100%;bottom: 0;left: 0;height: 10%;z-index:99999; " >
 
             <div class="container">
-           <p class="grey-text text-lighten-4"> © 2015 View Your Data OpenSource project</p>
+           <p class="grey-text text-lighten-4"> © 2015 View Your Data OpenSource project<br>Marc Solé Farré
             <a class="grey-text text-lighten-4 right" href="https://es.linkedin.com/pub/marc-solé-farré/6a/55b/9b3">
 
                 <img src="http://www.southerndredgingandmarine.com/sites/default/files/linkedin-icon-logo-vector.png" alt="Smiley face" width="30" height="30">
 
             </a>
-            <a class="grey-text text-lighten-4 right" href="https://github.com/hellfish90/ViewYourData">
+               <a class="grey-text text-lighten-4 right" style="margin-top: 0;" href="https://github.com/hellfish90/ViewYourData">
 
                 <img src="http://projects.theforeman.org/plugin_assets/redmine_omniauth_github/images/github_login_icon.png?1432886264" alt="Smiley face" width="30" height="30">
 
             </a>
+
+
+
+           </p>
+
+
 
 
             </div>
