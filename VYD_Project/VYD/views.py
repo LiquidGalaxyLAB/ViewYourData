@@ -11,7 +11,7 @@ from Utils.PresentationManager.cylinder_generator import CylinderGenerator
 from .forms import UrlForm
 from Utils.ParseManager.parse_manager import ParseManager
 
-
+@csrf_exempt
 def submit_url(request):
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
