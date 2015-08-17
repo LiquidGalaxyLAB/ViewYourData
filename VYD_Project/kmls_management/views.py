@@ -37,7 +37,7 @@ def syncKML(request):
 def deleteKML(request, pk):
     kml = Kml.objects.filter(id=pk)[0]
     print pk
-    os.system("rm kmls_management/static/" + str(kml) + ".kml")
+    os.system("rm kmls_management/static/" + str(kml))
 
     kml.delete()
 
