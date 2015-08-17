@@ -46,7 +46,7 @@ def deleteKML(request, pk):
 
 @csrf_exempt
 def kmlManagerView(request):
-    kmls = Kml.objects.all()
+    kmls = Kml.objects.all().order_by('-visibility')
     return render(request, 'manage_kml.html', {'kmls': kmls})
 
 
