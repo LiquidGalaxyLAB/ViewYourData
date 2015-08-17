@@ -15,10 +15,7 @@
     {% if kml.visibility %}
     <li class="collection-item">
         <div class="row">
-            <div class="col s2">
-                <a class="btn-floating btn-large waves-effect waves-light red" href="/VYD/KmlManager/{{kml.id}}/delete"><i
-                        class="material-icons">delete</i></a>
-            </div>
+
             <div class="col s2">
                 <a class="btn-floating btn-large waves-effect waves-light teal lighten-1"
                    onclick="syncData({{kml.id}})"><i class="material-icons">visibility</i></a>
@@ -27,7 +24,10 @@
                 <div class="valign-wrapper">
                     <h5 class="valign"><span class="teal-text text-darken-1">{{kml}}</span></h5>
                 </div>
-
+            </div>
+            <div class="col s2">
+                <a class="btn-floating btn-large waves-effect waves-light red" href="/VYD/KmlManager/{{kml.id}}/delete"><i
+                        class="material-icons">delete</i></a>
             </div>
         </div>
     </li>
@@ -37,19 +37,21 @@
     <li class="collection-item">
         <div class="row">
             <div class="col s2">
-                <a class="btn-floating btn-large waves-effect waves-light red" href="/VYD/KmlManager/{{kml.id}}/delete"><i
-                        class="material-icons">delete</i></a>
-            </div>
-            <div class="col s2">
                 <a class="btn-floating btn-large waves-effect waves-light red" onclick="syncData({{kml.id}})"><i
                         class="material-icons">visibility</i></a>
             </div>
+
             <div class="col s8 ">
                 <div class="valign-wrapper">
                     <h5 class="valign"><span class="teal-text text-darken-1">{{kml}}</span></h5>
                 </div>
 
             </div>
+            <div class="col s2">
+                <a class="btn-floating btn-large waves-effect waves-light red" href="/VYD/KmlManager/{{kml.id}}/delete"><i
+                        class="material-icons">delete</i></a>
+            </div>
+
         </div>
     </li>
 

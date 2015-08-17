@@ -84,7 +84,7 @@ class FileAddView(FormView):
 def import_kml(request):
     # Handle file upload
     if request.method == 'POST':
-        kml = Kml(file=request.FILES['file'], visibility=request.POST['visibility'])
+        kml = Kml(file=request.FILES['file'], visibility=False)
         kml.save()
 
         # Redirect to the document list after POST
