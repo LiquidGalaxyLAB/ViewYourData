@@ -88,6 +88,10 @@ The project is divided into two modules:
     </ul> 
 </ul> 
 
+Screenshots
+-------
+<img src="https://github.com/LiquidGalaxyLAB/ViewYourData/blob/master/VYD_Project/VYD/static/images/submit_url.jpg">
+
 License
 -------
 
