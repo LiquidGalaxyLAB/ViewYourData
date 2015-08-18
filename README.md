@@ -3,7 +3,7 @@
 Welcome to View Your Data project
 =======================
 <p align="center">
-  <img src="https://github.com/LiquidGalaxyLAB/ViewYourData/blob/master/VYD_Project/VYD/static/image/logo_VYD.png">
+  <img src="https://github.com/LiquidGalaxyLAB/ViewYourData/blob/master/VYD_Project/VYD/static/images/logo_VYD.png">
 
 </p>
 
