@@ -2,14 +2,27 @@
 
 Welcome to View Your Data project
 =======================
+<p align="center">
+  <img src="https://github.com/LiquidGalaxyLAB/ViewYourData/blob/master/VYD_Project/VYD/static/image/logo_VYD.png">
+
+</p>
 
 View Your Data is a tool that imports data of BigData platforms, and based on them create any presentation data layer to display in the Liquid Galaxy. 
 For do it, VYD provides a web application for manage the KML and configure the size of the differents figures and layers created.
 
+
+
+
+Google Summer Of Code
+------------
+<img src="https://1.bp.blogspot.com/-vIaQK-is11M/VC2kGKZ3udI/AAAAAAAAYzY/aZ63pTa5h6U/s1600/image01.jpg">
+
+This project is developed in a context of a scolarship in the program Google Summer Of Code 2015.
+
 Wiki
 ------------
 
-We would love your help expanding our [wiki](https://github.com/freecodecamp/freecodecamp/wiki) with more information about learning to code and getting a coding job.
+We would love your help expanding our [wiki](https://google.es) with more information about learning to code and getting a coding job.
 
 Prerequisites
 -------------
