@@ -63,6 +63,31 @@ python manage.py runserver
 
 ```
 
+Software Architecture
+-------
+<img src="https://github.com/LiquidGalaxyLAB/ViewYourData/blob/master/VYD_Project/VYD/static/images/SoftwareArchitecture.png">
+
+The project is divided into two modules:
+
+<ul style="list-style-type:disc">
+  <li>Layer Generator</li>
+    <ul style="list-style-type:disc">
+      <li>Parser Manager</li>
+          <ul style="list-style-type:disc">
+            <li>Its responsibility is to download the file, parse it and convert it to standard data</li>
+          </ul> 
+      <li>Presentation Manager</li>
+      <ul style="list-style-type:disc">
+            <li>Its responsibility is to display the data and the available presentation models, in order for the user to select the data and match them with the presentation models.</li>
+          </ul> 
+    </ul> 
+  <li>Layer Manager</li>
+    <ul style="list-style-type:disc">
+            <li>Manager store, display, delete and refresh the layers of liquid Galaxy.</li>
+          </ul> 
+    </ul> 
+</ul> 
+
 License
 -------
 
