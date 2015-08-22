@@ -22,7 +22,7 @@ This project is developed in a context of a scolarship in the program Google Sum
 Wiki
 ------------
 
-We would love your help expanding our [wiki](https://google.es) with more information about learning to code and getting a coding job.
+We would love your help expanding our [wiki](https://github.com/LiquidGalaxyLAB/ViewYourData/wiki) with more information about learning to code and getting a coding job.
 
 Prerequisites
 -------------
