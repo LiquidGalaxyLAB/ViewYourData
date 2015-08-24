@@ -22,7 +22,7 @@ This project is developed in a context of a scolarship in the program Google Sum
 Wiki
 ------------
 
-We would love your help expanding our [wiki](https://google.es) with more information about learning to code and getting a coding job.
+We would love your help expanding our [wiki](https://github.com/LiquidGalaxyLAB/ViewYourData/wiki) with more information about learning to code and getting a coding job.
 
 Prerequisites
 -------------
@@ -58,6 +58,9 @@ pip install -r requirements.txt
 # Execute Setup
 sh setup.sh
 
+# Go to the folder of project
+cd VYD_Project
+
 # Run Django application
 python manage.py runserver
 
@@ -87,6 +90,10 @@ The project is divided into two modules:
           </ul> 
     </ul> 
 </ul> 
+
+Screenshots
+-------
+<img src="https://github.com/LiquidGalaxyLAB/ViewYourData/blob/master/VYD_Project/VYD/static/images/submit_url.jpg">
 
 License
 -------
