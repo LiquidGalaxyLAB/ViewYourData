@@ -64,6 +64,10 @@ cd VYD_Project
 # Run Django application
 python manage.py runserver
 
+# Open one browser and go to this URL
+localhost:8000
+
+
 ```
 
 Software Architecture
