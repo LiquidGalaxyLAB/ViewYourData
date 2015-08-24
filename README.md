@@ -58,6 +58,9 @@ pip install -r requirements.txt
 # Execute Setup
 sh setup.sh
 
+# Go to the folder of project
+cd VYD_Project
+
 # Run Django application
 python manage.py runserver
 
