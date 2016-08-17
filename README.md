@@ -41,6 +41,9 @@ git clone --depth=1 https://github.com/LiquidGalaxyLAB/ViewYourData.git VYD
 
 cd VYD
 
+# Install packages
+sudo apt-get install -y libxml2-dev libxslt1-dev zlib1g-dev python3-pip
+
 # Install python
 wget https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tgz
 tar xfz Python-2.7.9.tgz
