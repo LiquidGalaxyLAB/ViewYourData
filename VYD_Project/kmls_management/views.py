@@ -12,6 +12,33 @@ from django.shortcuts import render_to_response
 from forms import UploadKMLForm
 
 
+
+
+def write_ip(ip):
+    f = open(os.path.dirname(os.path.dirname(os.path.abspath(__file__))) +
+             '/ipsettings', 'w')
+    f.write(ip)
+    f.close()
+
+def get_galaxy_ip():
+    f = open(os.path.dirname(os.path.dirname(os.path.abspath(__file__))) +'/ipsettings', 'r')
+    ip_galaxy = f.read()
+    f.close()
+    return ip_galaxy
+
+
+
+def get_server_ip():
+    p = subprocess.Popen(
+        "ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{print $1}'",
+        #"ifconfig eno1 | grep 'inet addr:' | cut -d: -f2 | awk '{print $1}'",
+        shell=True,
+        stdout=subprocess.PIPE)
+    ip_server = p.communicate()[0]
+    return ip_server
+
+
+
 @csrf_exempt
 def syncKML(request):
     id = request.POST['id']
@@ -51,14 +78,15 @@ def kmlManagerView(request):
 
 
 def syncKmlsToGalaxy():
+    ip_server = get_galaxy_ip()
+
     filePath = "/tmp/kml/kmls.txt"
     serverPath = "/var/www/html"
-    os.system("sshpass -p 'lqgalaxy' scp " + filePath + " lg@172.26.17.21:" + serverPath)
+    os.system("sshpass -p 'lqgalaxy' scp " + filePath + " lg@"+ ip_server +":" + serverPath)
 
 
 def syncKmlsFile():
-    p = subprocess.Popen("ipconfig getifaddr en0", shell=True, stdout=subprocess.PIPE)
-    ip_server = p.communicate()[0]
+    ip_server = get_server_ip()
 
     os.system("rm /tmp/kml/kmls.txt")
     os.system("touch /tmp/kml/kmls.txt")

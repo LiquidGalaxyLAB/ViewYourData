@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd /home/lg/Desktop/lglab/gsoc15/VYD/VYD_Project
+source ~/.virtualenvs/vyd/bin/activate
+python manage.py $1 runserver 0.0.0.0:8000 --noreload
+
