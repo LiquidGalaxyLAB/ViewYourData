@@ -65,10 +65,12 @@ sh setup.sh
 cd VYD_Project
 
 # Run Django application
-python manage.py runserver
+./vyd-start <lg_ip>
 
 # Open one browser and go to this URL
 localhost:8000
+
+(Remember to have eth0 as network interface)
 
 
 ```
